@@ -1,0 +1,216 @@
+i,em : nghiêng chữ
+u,ins : gạch chân chữ
+THUỘC TÍNH CSS : 
+- color
+-background-color
+- padding:căn lề 10px
+- boder: 1px solid gray (VIỀN - 1px:độ dày của viền, Gray:màu của viền, Solid:nét liền (dashed:nét đứt,dotted:nét chấm)
+- margin:căn lề ngoài viền (margin-top : 10px)
+- font-family: font cua chu
+- font-size : cỡ chữ 
+- font-weigh : đậm chữ ( bằng với thẻ B <b></b>)
+- float : căn ảnh (float:left thì chữ sang bên phải và ngược lại)
+- text-decoration : gạch chân chữ
+- line-height:20px (độ dãn của dòng)
+- hover : di chuột thi làm đổi màu (
+       a:hover{
+        color : red
+	transission : 0.4s
+       }
+)
+- margin : auto (căn chỉnh ra giữa màn hình)
+-     text-transform: uppercase : ép  in hoa
+- thẻ a ko hiểu được with và height nên phải dùng display : block
+-di chuột thằng bố mà cả 2 thg con đều hover 
+   bố : hover .con {
+     color : gray
+   }
+- position: relative;(làm gốc)
+- position: absolute;(di chuyển so với thằng được làm gốc)
+- display : flex - (dùng cho thằng div bố , dùng để chia cột hoặc chia hàng )
+	  - flex-direction:column-reverse;(chia thàng hàng vao đảo đuôi lên đầu)
+		          : column (chia thành hàng)
+			  : row (chia thành cột)
+			  :row-reverse (chia thành cột nhưng đảo đuôi lên đầu)
+	  - flex-wrap : no-wrap ( chỉ hiện thị trên 1 hàng)
+	  - flex-wrap : wrap (hiển thị hết hàng thì xuống hàng tiếp)
+   	  - justify-content:center (dồn các phần tử ra giữa)
+	  - justify-content:flex-start (dồn các phần tử sang trái)
+          - justify-content:flex-end (dồn các phần tử sang phải)
+	  - justify-content:space-between ( dàn đều các phần tử )
+	  - justify-content:space-around (dàn đều các phần tử và cách đều 2 đầu)
+	  - justify-content:space-evenly;(dàn đều các phần tử và cách 2 đầu bằng khoảng cách dàn đều)
+	  - align-items:center (căn các phần tử ra chính giữa)
+          - align-items:flex-start ( dồn các phần tử lên góc trên)
+          - align-items:flex-end ( dồn các phần tử xuống góc dưới
+- img:hover{
+    transform: scale(2) - day la zoom;
+    opacity: 0.7; - day la tao mờ ảnh
+    transition: 5s;
+} (thuộc tính zoom ảnh)
+
+========== git ================
+git add .
+git commit -m "first commit"
+git push
+- z-index : 1 hoặc 2 là hiện thị trước hay hiện thị sau
+-     background-image: -webkit-linear-gradient(top,white,50%,black) - đổ màu xám cho ảnh- trên top 50% là màu trắng, dưới là màu đens
+-   background-color: transparent : màu trong suốt 
+-   background-attachment: fixed (thuộc tính làm cho nền đứng yên khi cuộn chuột)
+-  background-size: cover; làm cho cái ảnh n vừa in cái div
+- background-position-x: -10px; dịc sang trái của ảnh 10px
+
+THUỘC TÍNH ANIMATION :thuộc tính tạo chuyển động
+@-webkit-keyframes zoom{
+    from {transform: scale(1);}
+    to {transform: scale(2);}
+} => đây là zoom ảnh , mún dùng ở đâu thì gọi zoom vào - ví dụ   animation: zoom 1s ;
+=========================================================================================================================================
+=========================================================================================================================================
+                                 REACT:
+import 'antd/dist/antd.css' - cai nay la cua antd import index.js
+import 'react-toastify/dist/ReactToastify.css'- day la cai css cua cai toastify - import app.js
+download React-Toastify : hien bang thong bao 
+npm i redux react-redux redux-devtools-extension
+npm i redux-thunk
+npm i firebase
+=========================================================
+                             MongoDB-nodejs
+npm init -y
+npm i express body-parser mongoose cors morgan express-jwt firebase-admin jsonwebtoken nodemon dotenv
+npm i slugify
+npm i cloudinary
+
+npm i react-image-file-resizer: dùng cho file upload
+npm i typewriter-effect : hieu ung may danh chu
+npm i react-responsive-carousel :
+npm i react-star-ratings: rating star
+npm i lodash
+ const {slug} = useParams()
+npm i react-modal-image : xem chi tiet anh
+npm i react-quill
+npm i react-datepicker
+npm i stripe : ben sever
+npm i @stripe/stripe-js @stripe/react-stripe-js : ben client
+      @stripe/react-stripe-js @stripe/stripe-js
+npm i @react-pdf/renderer
+npm install "@david`.kucsai/react-pdf-table"
+npm i uniqueid :sever
+==========================================
+
+được ủy quyền thích hợp
+xác định phạm vi đánh giá
+thực hiện dấu chân thông qua các công cụ tìm kiếm
+
+thực hiện hack google
+==========================
+
+import './App.css';
+import Login from './pages/auth/Login';
+import { LoadingOutlined } from "@ant-design/icons";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+
+} from "react-router-dom";
+import Register from './pages/auth/Register';
+import Home from './pages/Home';
+import { ToastContainer } from 'react-toastify';
+import Header from './component/Header';
+import 'react-toastify/dist/ReactToastify.css'
+import RegisterComplete from './pages/auth/RegisterComplete';
+import {useDispatch} from 'react-redux';
+import {auth} from './Firebase';
+import { useEffect } from 'react';
+import Fogetpassword from './pages/auth/Fogetpassword';
+import {currentUser} from './function/index'
+import History from './pages/user/History'
+import UserRouter from './Routers/UserRouter'
+import CategoryUpdate from './pages/admin/category/CataegoryUpdate'
+import Password from './pages/user/Password';
+import WishList from './pages/user/WishList';
+import AdminRoute from './Routers/AdminRoute'
+import AdminDashboard from './pages/admin/AdminDashboard'
+import AllProduct from './pages/admin/product/AllProduct'
+import CategoryCreate from './pages/admin/category/CategoryCreate';
+import SubCreate from './pages/admin/sub/SubCreate';
+import SubUpdate from './pages/admin/sub/SubUpdate';
+import ProductCreate from './pages/admin/product/ProductCreate';
+import ProductUpdate from './pages/admin/product/ProductUpdate';
+import Product from './pages/Product';
+import CategoryHome from './pages/category/CategoryHome';
+import SubHome from './pages/sub/SubHome';
+import Shop from './pages/Shop';
+import Cart from './pages/Cart';
+import SideDraw from './component/draw/SideDraw';
+import CheckOut from './pages/CheckOut';
+import CreateCouponPage from './pages/admin/coupon/CreateCouponPage';
+import Payment from './pages/Payment';
+import { Suspense } from "react";
+======================
+-- là đến loại bỏ những phần sau câu truy vấn,trong phpmysql nó dùng để ghi những comment
+
+4j41PYJMavCjriz0DjwmHQ87FumXXTyuX0nR0kyvdErzDZnzoboropbatDa8Rhf942pN2XaDpdoZWbnBrEDYEs1HMKRAJmU2
+
+snort -dev -i 1 -p -c c:\Snort\rules\ruless.txt -l c:\Snort\log -K ascii -k none
+
+
+https://github.com/Graylog2/collector-sidecar/releas
+
+sqlmap -u    -D acuart --tables 
+sqlmap -u -D acuart -T users --columns
+sqlmap -u -D acuart -T users -C pass --dump
+
+
+
+Steganography is the procedure of hiding secret data inside non-secret files to conceal the fact that a secret message is being communicated.
+The term combines the greek words steganós which means hidden and graph which means writing.
+The procedure aims to encode data in a way that is so subtle such that
+the changes cannot be noticed.
+Steganogrphy can be combined with cryptography to add an additional layer of security when communicating sensitive data.
+BPCS algorithm was introduced to overcome the shortcomings of traditional steganography techniques with limited data hiding capacity. This technique can hide up to 50% of the cover image data amount without much distortion in the visual appearance of the original image.
+In BPCS, a multi-valued image consisting of 24-bit pixels can be
+decomposed into a set of 24 binary pictures (bit planes).
+image block on the right is replaced with the meassage block on the left
+number of complex image blocks\
+
+conjugation illustration
+
+example image file (pixels are just stored in an array of RGB values
+without any header information
+======================================================================
+
+CÔNG TY TNHH PHẦN MỀM FPT - FPT SOFTWARE :  Được đào tạo chuyên sâu về 01 trong các công nghệ Java; C#/.Net, Angular, ReactJS, NodeJS, C/C++/Embedded; Android; iOS; Manual/ Automation Test... và quy trình phát triển dự án phần mềm.
+
+CÔNG TY CỔ PHẦN MISA : VỊ TRÍ THỰC TẬP: FRESHER WEB
+
+CÔNG TY CỔ PHẦN NCCPLUS VIỆT NAM ;  Được tham gia khóa đào tạo training on job Front end (angular, vue js hoặc react-js)/ Back end Resful API - Web Application Framework - Spring Boot
+
+===================
+AHT : reactjs , nodejs
+BLAMEO : reactjs 
+CoWell : reactjs , nodejs
+FSOFT : reactjs , nodejs
+VMO : reactjs , nodejs
+MISA : có web , nhưng chưa bt là gì
+NASHTECH : có test , reactjs , nodejs
+VTI :reactjs , nodejs ,có Test
+NCCPLUS : reactjs , nodejs
+SUN : có Test, reactjs , nodejs
+VCCORP : có Test
+VIETIS : có Test
+                                              STT_TENSV_TENDEDTAI
+
+nv1 : SUN
+nv2 : CÔNG TY TNHH PHẦN MỀM FPT-FPT SOFTWARE			Vũ Đức Mạnh-B17DCAT123
+nv3 : CÔNG TY CỔ PHẦN CÔNG NGHỆ VMO holdings 					
+nv4 : CO-WELL ASIA
+nv5 : CÔNG TY CỔ PHẦN MISA                                 manhvd.B17AT123@stu.ptit.edu.vn  
+							   5031999
+sinh,đồ thị,cây,hàngđợi ngăn xếp
+celenium của python để giả mạo hành vi
+  
+Vũ Đức Mạnh-B17DCAT123
+Số thứ tự : 33
+Tên đề tài : Kiểm thử phát hiện lỗ hổng bảo mật trên hệ thống website(Lỗ hổng SQLinjection, XSS, Brute Force)   open mendelay

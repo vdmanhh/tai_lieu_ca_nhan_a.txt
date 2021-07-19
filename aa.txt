@@ -1,0 +1,151 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="false">
+    <shape>
+        <solid android:color="#75A877"></solid>
+        <corners
+            android:radius="17dp"/>
+        <stroke android:width="3dp"
+            android:color="#FFFFFF"
+            ></stroke>
+    </shape>
+</item>
+</selector>
+
+==================================================
+NoActionBar.Bridge
+==================================================
+https://docs.google.com/forms/d/e/1FAIpQLSdMWS2RsMzvMXqAnn6NZ6p-k-qDFEoBz7Sch096La_K93Rkzw/viewform
+https://docs.google.com/forms/d/e/1FAIpQLScMVdb9ov783wXDEebvQmfNtZq6qpZIxL1_yW6TLVMVyCxOuA/viewform
+https://docs.google.com/forms/d/e/1FAIpQLScYhxtSsrITn08057hamaT0ZjU8VRDw91NbBfV1Jpn82aPmaw/viewform
+https://drive.google.com/drive/folders/14gaG8UcdabJwqo1vLOvP5OFaQhJrEaTc
+https://drive.google.com/drive/folders/1CBef46ccE4313IqeekWYN66jEypxGg77
+https://drive.google.com/file/d/1CKOWKP-seMDoCR8v4gy1OvXIiJWx62ew/view
+https://drive.google.com/file/d/1QTD6Km5VHxU-a2iV0lyQBRPMPA-SiMA-/view :  đề part 7 số 6 btvn =>FORM ĐÁP ÁN https://docs.google.com/forms/d/e/1FAIpQLSeu13wxP8uU8eYwhFbgHUeF2L8xRwnW4ctfnVtXBL39JHOpYw/viewform
+
+    his + tính từ
+    feel : Adj
+    arrival/survival/finding/journal/packing : là danh từ
+    in/on/by/for/at + danhtu/V_ing
+    remains/become/look/stay/prove/found/seem/find + Adj
+    when/after/by/before/of + Ving
+    lately : gần đây
+    S + V + ... + phản thân            S + V + O +who/which + V + O  hoặc S + who/which + V + O + V_chia_thì + O
+   timely : kịp thời			động từ chia thì, thì bỏ thằng Ving đầu tiên    (S người : Chủ động),(S # người  bị động)
+   lately : gần đây
+   completely : hoàn toàn
+===============================================================
+
+Cụm N : a/an/the, tính từ sở hữu, some/many, Adj+ N
+overly : quá mức
+timely,friendly,costly,lovely,lonely : là tính từ đặc biệt
+unpredictably : ko dự đoán được
+within(trong vòng) + tgian xác định (câu rất hay thi : within distance walking : trong phvi đi bộ, within the technology )
+during(trong suốt) + tgian ko xác định- hay cộng vói hội thảo, phát biểu
+so...that - dấu 3 chấm cộng 1 tính từ
+
+https://youtu.be/kHMgY4xHL9E
+https://youtu.be/DhVjrRddR0M     sqlmap -u "http://127.0.0.1/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "security=low; PHPSESSID=5tnrugc0q5gfbjejbmcr97rgj5" --batch --dbs
+https://youtu.be/9qJmCOXk028
+https://youtu.be/lNCViM7R8N8
+https://youtu.be/U-ujr_7dvvk
+https://youtu.be/i2c1Q9HPanQ         916 2935 2057
+============================================
+    Adv bổ nghĩa cho động từ : he taught me and my brother strictly     Nó bị timeout đấy,Do VPS chặn ko cho quét
+    so...that => cần 1 tính từ
+
+    chỉ có những người sống xquang hà nội thì mới có thể tham gia
+     shucchosuru no ha hanoinomawarini sundeiruhito dakedo    
+===========================================================================================================
+
+  ````			N that V  - V that N
+			SAU very/more + tinh tu
+			until futher notice : cum tu hay thi
+			so that + menh de
+			sau tinh tu so huu + danh tu
+
+			call: talk,connect,consultan,speak,tell
+			website : site,online,internet
+			return : come back
+			invoice :bill, receip
+  			payment system : cost,money
+			a document : copy, paper,manual,instruction,guidline,document
+			fashion : jacket,shoe,dress,clothing,Garment,man,woman,wearing,t-shirt
+			Human resource : hire ,employment,recruit
+			client:customer,consumer
+			Photographing : picture, take a photo
+       			depatment : HR,accounting,ad
+			
+
+please start by clarifying the concept of cryptosystem security level and 
+explaining the relationship between the security level of the cryptosystem e.g
+the security of encrypted data or the security of authentication when using a
+certificate e.g X.509 to hide the content of a message or in the authentication
+.you can show and refer to what I said in class or to encrypt HTTPS/TLS and WEB-browser
+2 : please start with determining the number of crytographic keys for RSA with
+a specific bit size, e.g from the size n=p*q about 32 bits and next 64,128,256,512
+to begin with, please use what I was talking about, i.e from the theorem or the
+theory serving determining the number of primes from 0 to x for example prime(x)=x/ln(x)
+===================================================================================
+hãy bắt đầu bằng cách làm rõ khái niệm về mức độ bảo mật của hệ thống mật mã và
+giải thích mối quan hệ giữa mức độ bảo mật của hệ thống mật mã, ví dụ:
+bảo mật của dữ liệu được mã hóa hoặc bảo mật của xác thực khi sử dụng
+chứng chỉ, ví dụ: X.509 để ẩn nội dung của một tin nhắn hoặc trong xác thực
+.bạn có thể hiển thị và tham khảo những gì tôi đã nói trong lớp hoặc để mã hóa HTTPS / TLS và trình duyệt WEB
+2: hãy bắt đầu với việc xác định số lượng khóa mật mã cho RSA với
+kích thước bit cụ thể, ví dụ: từ kích thước n = p * q khoảng 32 bit và 64,128,256,512 tiếp theo
+để bắt đầu, hãy sử dụng những gì tôi đã nói, tức là từ định lý hoặc
+lý thuyết phục vụ việc xác định số lượng các số nguyên tố từ 0 đến x, ví dụ: nguyên tố (x) = x / ln (x)
+
+
+
+ <div className="card" style={{ width: '33rem',height : "auto" }}>
+                    <img className="card-img-top" src={images&&images.length ?images[0].url :""} alt="Card image cap" />
+                    <div className="card-body">
+                        <h5 className="card-title">{p.title}</h5>
+                        {/* <p>{images[0].public_id}</p> */}
+                        <p className="card-text">{p.description}</p>
+                        <div className="mb-5">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" className="btn btn-outline-warning"><i class="fas fa-eye-slash mr-1"></i>View Product</a>
+                        <a href="#" className="btn btn-outline-warning haha"><i class="fas fa-plus mr-1"></i>Add to Cart/Wishlist</a>
+                    </div>
+                </div>
+
+Với n=p*q có độ lớn 256 bit, để đảm bảo tính an toàn cho bài toán, ta chọn p, q có độ lớn 128 bit.
+	Như vậy p, q là các số nguyên tố có giá trị trong khoảng [0, 2^128-1]
+	Số lượng số nguyên tố π (p) =(2^128-1)/ln⁡(2^128-1)
+Số lượng số nguyên tố π (q) =(2^128-1)/ln⁡(2^128-1)
+Số lượng cặp khóa (p,q) là π (p)* π (q)
+=======================================
+https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+https://en.wikipedia.org/wiki/Primality_test
+https://en.wikipedia.org/wiki/Security_level
+https://en.wikipedia.org/wiki/Prime_number_theorem
+https://eznet.com.vn/tai-sao-chung-chi-bao-mat-ssl-va-https-lai-can-thiet-cho-website-cua-ban/#Ba_ly_do_quan_trong_cua_website_co_chung_chi_bao_mat
+https://www.ssl.com/faqs/what-is-an-x-509-certificate/
+
+
+
+
+https://drive.google.com/file/d/1mccTQFpMzMyDCxJ41AkxXZq5W87QINkR/view
+https://drive.google.com/file/d/1t87Tb7pOIJM2rW8BlLGrLt5Is8aelcG6/view
+https://docs.google.com/forms/d/e/1FAIpQLSfEBGNJx_5_ug28D241i0TrnxuCA7si5s5srTP2uMhGNFctLA/formResponse
+
+
+Dạ em chào cô ạ! Em tên là Vũ Đức Mạnh sinh viên D17 và sắp tới sẽ thực tập tại công ty VMO, hôm qua em có đọc
+ bài viết của cô về các bạn sinh viên sắp tới sẽ thực tập tại VMO, cô ơi cô có thể cho em xin file danh sách các bạn 
+sinh viên thực tập  ở VMO như trong hình để em kiểm 
+tra thông tin cá nhân với ạ, em cảm ơn cô nhiều ạ
+
+
+an toàn thông tin - học viện công nghệ Bưu chính
+công nghệ thông tin hoặc an toàn thông tin - kỹ thuật mật mã
+công nghệ thông tin - đại học xây dựng
+công nghệ thông tin - đại học công nghiệp
+công nghệ thông tin - đại học thủy lợi
+Đại học Khoa học và Công nghệ Hà Nội - 24.75 điểm
