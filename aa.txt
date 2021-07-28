@@ -136,7 +136,7 @@ https://drive.google.com/file/d/1mccTQFpMzMyDCxJ41AkxXZq5W87QINkR/view
 https://drive.google.com/file/d/1t87Tb7pOIJM2rW8BlLGrLt5Is8aelcG6/view
 https://docs.google.com/forms/d/e/1FAIpQLSfEBGNJx_5_ug28D241i0TrnxuCA7si5s5srTP2uMhGNFctLA/formResponse
 
-
+https://drive.google.com/file/d/1nDkKOb1j9HlUNjhcWVf-WQCOwiXxCO6L/view
 Dạ em chào cô ạ! Em tên là Vũ Đức Mạnh sinh viên D17 và sắp tới sẽ thực tập tại công ty VMO, hôm qua em có đọc
  bài viết của cô về các bạn sinh viên sắp tới sẽ thực tập tại VMO, cô ơi cô có thể cho em xin file danh sách các bạn 
 sinh viên thực tập  ở VMO như trong hình để em kiểm 
@@ -149,3 +149,21 @@ công nghệ thông tin - đại học xây dựng
 công nghệ thông tin - đại học công nghiệp
 công nghệ thông tin - đại học thủy lợi
 Đại học Khoa học và Công nghệ Hà Nội - 24.75 điểm
+
+N đếm được : đếm được số ít (1 cái bàn)
+	   : đếm được số nhiều
+N ko đếm được
+Many : N số nhiều ( a few : 1 ít, giống many)
+Much : N ko đếm được ( alittle : 1 chút, giống much )
+Some : phủ định, cứ thấy câu hỏi thì dùng some
+few, little : dường như là ko có/ phủ định
+
+
+hokkaido bắc nhìn thành phố giai đoạn phía trong 355 địa chỉ 4 bắc nhìn nhà máy
+番地 : banchi
+北 : kita
+市 : thành phố
+内 : phía trong
+見 : nhìn 
+相 : giai đoan
+			北海道北見市相内355番地4 北見工場    
