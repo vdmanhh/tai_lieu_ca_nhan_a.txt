@@ -74,6 +74,17 @@ download React-Toastify : hien bang thong bao
 npm i redux react-redux redux-devtools-extension
 npm i redux-thunk
 npm i firebase
+npm i react-toastify
+  {productRelevant && productRelevant.length > 0 && productRelevant.filter(productRelevant=>productRelevant.name !== product.name).map((p, k) => {
+import {Badge} from 'antd' dùng thông báo của cart 
+import {Drawer,Button} from 'antd' cái hiện tb add cart bên phải
+.toLocaleString() : chuyển 50000 thành 50.000
+npm i react-quill : soạn thảo văn bản
+{new Date().toLocaleString()} lay gio theo thoi gian thuc
+{user.email.split("@")[0]}
+{
+const products = await Product.find({$text :{$search : query}}) tim kiem bat buoc phai co (text : true) trong model
+}
 =========================================================
                              MongoDB-nodejs
 npm init -y
@@ -219,17 +230,221 @@ Tên đề tài : Kiểm thử phát hiện lỗ hổng bảo mật trên hệ t
 khắc kị bất thường ,vợ chồng ăn ở ko bền lâu, trước hợp sau lìa,sản nghiệp sẵn sàng lần hồi cũng tẩu tán phu phụ tâm lí nghịch
  thường ,hạnh phúc gia đình sau trước hư nát,phu thê li biệt , vợ chồng ko bỏ thì chồng phải chết
 
-
-1.Đại học hà nội : Công nghệ thông tin (dạy bằng tiếng Anh), năm 2020-lấy 24.65đ
-2.Đại học Khoa học và Công nghệ Hà Nội : An toàn thông tin : 2020 lấy 24.1đ
-3.Học viện kỹ thuật mật mã : An toàn thông tin - 2020 lấy 24.9đ
+1.Đại học hà nội : Công nghệ thông tin (dạy bằng tiếng Anh) - Chất lượng cao : 2020 -23,45đ (khoa này thì học phí đắt) ==>(done)
+2học hà nội : Công nghệ thông tin (dạy bằng tiếng Anh), năm 2020-lấy 24.65đ  ==>(done)
+3.Đại học Khoa học và Công nghệ Hà Nội : An toàn thông tin : 2020 lấy 24.1đ  ==>(done)
+4.Đại học Khoa học và Công nghệ Hà Nội : Công nghệ Thông tin và truyền thông -2020 : 24,75đ  ==>(done)
+5.Học viện kỹ thuật mật mã : An toàn thông tin - 2020 lấy 24.9đ  ==>(done)
 			   : Công nghệ thông tin - 2020 lấy 25.8đ
-4.Đại học khoa học tự nhiên : Máy tính và khoa học thông tin : 2020 lấy 24.8đ
-5.Đại Học Xây Dựng Hà Nội  :  Công nghệ thông tin - 2020 lấy 24.25đ
-6.Đại học công nghiệp Hà Nội : Công nghệ thông tin - 2020 lấy 25.01đ
-7.Đại học Nhân văn hà nội    : nghành Hàn Quốc học
-8.Đại học thủy lợi : Công nghệ thông tin - 2020 lấy 25.5đ
-9.Học viện ngân hàng : Ngôn ngữ Anh - năm 2020  lấy: 25đ
-10.Học viện ngân hàng : Công nghệ thông tin -đây là nghành ms năm nay mới có
-11.Đại học mở : Công nghệ thông tin - 2020 lấy 23đ
-12.Học viện Tài chính :Ngôn ngữ Anh - năm 2020  lấy: 32,70đ (tiếng anh nhân đôi)
+6.Đại học Kiến trúc Hà Nộ: Công nghệ thông tin - 2020 lấy 21đ	==>(done)
+7.Đại học khoa học tự nhiên : Máy tính và khoa học thông tin : 2020 lấy 24.8đ
+8.Đại Học Xây Dựng Hà Nội  :  Công nghệ thông tin - 2020 lấy 24.25đ	==>(done)
+9.Đại học công nghiệp Hà Nội : Công nghệ thông tin - 2020 lấy 25.01đ	==>(done)
+10.Đại học Nhân văn hà nội    : nghành Hàn Quốc học
+11.Đại học thủy lợi : Công nghệ thông tin - 2020 lấy 25.5đ ==>(done)
+12.Học viện ngân hàng : Ngôn ngữ Anh - năm 2020  lấy: 25đ	==>(done)
+13.Học viện ngân hàng : Công nghệ thông tin -đây là nghành ms năm nay mới có	==>(done)
+14.Học viện ngân hàng : Hệ thống thông tin quản lý -2020 -25đ ==>(done)
+15.Đại học mở : Công nghệ thông tin - 2020 lấy 23đ  ==>(done)
+16.Học viện Tài chính :Ngôn ngữ Anh - năm 2020  lấy: 32,70đ (tiếng anh nhân đôi)==>(done)
+17.Đại học Điện lực : Công nghệ thông tin - 2020 lấy 20đ ==>(done)
+18.Đại học Công nghệ Giao thông Vận tải (Cơ sở Hà Nội) : Công nghệ thông tin - 2020 lấy 23đ ==>(done)
+19.Đại học Công nghệ Giao thông Vận tải (Cơ sở Hà Nội) :Hệ thống thông tin- 2020 lấy 19.5đ ==>(done)
+20.Đại học Giao thông Vận tải : Công nghệ thông tin - 2020 lấy 24.75đ==>(done)
+21. Đại học Mỏ - Địa chất Hà Nội : Công nghệ thông tin - 2020 lấy 17đ ==>(done)
+22.Đại học tài nguyên và môi trường  : Công nghệ thông tin - 2020 lấy 17đ ==>(done)
+23.Đại học kinh doanh và công nghệ hà nội : Công nghệ thông tin  -2020 16đ==>(done)
+24.Đại học bách khoa : Tiếng Anh KHKT và Công nghệ 24.1 : giảng dạy bằng tiếng anh ==>(done)
+25.Đại học Kinh tế Kỹ thuật - Công nghiệp (Cơ sở Hà Nội) - 2020 lấy 19đ==>(done)
+======================================
+	ten,mo ta, trang thai,dia chi,gia,anh,category,subcategory,discount,slug,shipping
+
+====================================
+repair : fix, out of service, 
+advertisement: tv,radio,commercial, promotion,
+impressing = congratulation (an tuong) :impressing , excite,enjoy, great,satisfy,amazing,intersting,not..disappointed
+time :delay,schedule, postpone
+celebration : anniversary, party,celebrate
+review : look at, look over, carefully, check, exam
+
+
+ {products && products.length > 0 && products.map((p, k) => {
+                                return (
+    
+                                    <CartProductUser
+                                        product={p}
+                                    ></CartProductUser>
+                                )
+                            })
+                            
+                            
+                            }
+
+
+============================
+
+import './App.css';
+import Login from './page/auth/Login';
+import Footer from './page/header/Footer';
+import Header from './page/header/Header';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import {currentUser} from './function/User'
+import { auth } from './Firebase';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+import Register from './page/auth/Register';
+import RegisterComple from './page/auth/RegisterComple';
+import AdminDaskBoard from './page/admin/AdminDaskBoard';
+import {useDispatch} from 'react-redux';
+import {useSelector} from 'react-redux';
+import { useEffect } from 'react';
+import ForgetPassword from './page/auth/ForgetPassword';
+import AdminRouter from "./router/AdminRouter"
+import AuthRouter from './router/AuthRouter';
+import Category from './page/admin/Category';
+import UpdateCategory from './page/admin/UpdateCategory';
+import SubCategory from './page/admin/SubCategory';
+import UpdateSubCategory from './page/admin/UpdateSubCategory';
+import Product from './page/admin/Product';
+import UpdateProduct from './page/admin/UpdateProduct';
+import Home from './page/Home';
+import ChiTietSP from './page/ChiTietSP';
+import DrawSlide from './compoment/DrawSlide';
+import Cart from './page/Cart';
+import UserPayment from './compoment/UserPayment';
+import News from './compoment/News';
+import CheckOut from './page/CheckOut';
+import Coupon from './page/admin/Coupon';
+import CouponUpdate from './page/admin/CouponUpdate';
+import CheckOutSuccess from './page/CheckOutSuccess';
+import User from './page/User';
+import Order from './page/admin/Order';
+import ChooseCate from './page/ChooseCate';
+import UserWishLish from './page/user/UserWishLish';
+import Store from './page/Store';
+// import UserWishLish from '';
+function App() {
+  const dispatch = useDispatch();
+  const {user} = useSelector((state)=>({...state}));
+  useEffect(()=>{
+    const unsubcrible = auth.onAuthStateChanged(async (user)=>{
+      if(user){
+        const idTokenResult = await user.getIdTokenResult();
+      
+       currentUser(user,idTokenResult.token)
+       .then(res=>{
+         console.log("current user==>",res.data);
+          dispatch({
+            type : "LOGIN",
+            payload : {
+              name : res.data.name,
+              role: res.data.role,
+              email : user.email,
+              _id : res.data.id,
+              token : idTokenResult.token
+            }
+          })
+       }).catch(err =>{console.log("err:"+err);})
+      }
+    })
+    return ()=> unsubcrible();
+  },[dispatch])
+  return (
+    <div>   
+    <Router>
+   
+     <Header></Header>
+     <DrawSlide></DrawSlide>
+     <ToastContainer position="top-center" autoClose={2000}></ToastContainer>
+        <Switch>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+          <Route path="/home">
+            <Home />
+          </Route>
+
+          <Route path="/register">
+            <Register />
+          </Route>
+
+          <Route path="/tin-tuc/:slug">
+            <News />
+          </Route>
+
+          <Route path="/register-comple">
+            <RegisterComple />
+          </Route>
+
+          <Route path="/forget-password">
+            <ForgetPassword />
+          </Route>
+
+          <Route path="/chi-tiet-san-pham/:slug">
+            <ChiTietSP />
+          </Route>
+          <Route path="/gio-hang">
+            <Cart />
+          </Route>
+
+          <Route path="/the-loai/:slug">
+            <ChooseCate />
+          </Route>
+
+
+          <Route path="/lich-su">
+            <User />
+          </Route>
+
+          <Route path="/cua-hang">
+            <Store />
+          </Route>
+
+          <Route path="/san-pham-yeu-thich">
+            <UserWishLish />
+          </Route>
+
+          <AuthRouter exact path="/user-payment"  component={UserPayment} />
+          <AuthRouter exact path="/payment-success"  component={CheckOutSuccess} />
+          <AuthRouter exact path="/thanh-toan"  component={CheckOut} />
+          <AdminRouter exact path="/admin"  component={AdminDaskBoard} />
+          <AdminRouter exact path="/category-admin"  component={Category} />
+          <AdminRouter exact path="/category-update-admin/:slug"  component={UpdateCategory} />
+          <AdminRouter exact path="/sub-category-admin"  component={SubCategory} />
+          <AdminRouter exact path="/update-sub-category-admin/:slug"  component={UpdateSubCategory} />
+          <AdminRouter exact path="/coupon-admin"  component={Coupon} />
+          <AdminRouter exact path="/product-admin"  component={Product} />
+          <AdminRouter exact path="/order-admin"  component={Order} />
+          <AdminRouter exact path="/update-product-admin/:slug"  component={UpdateProduct} />
+          <AdminRouter exact path="/coupon-update-admin/:_id"  component={CouponUpdate} />
+        </Switch>
+
+        <Footer></Footer>
+    </Router>
+    </div>
+  );
+}
+
+export default App;
+=========================================
+thuộc tính CSS mới
+white-spcae : nowrap : hiển thị trên cùng 1 dòng
+transform : translateX(10px) dịch chuyển theo trục Ox cách trái 10px
+z-index : thứ tự hiển thị
+em: là đơn vị tham chiếu tỷ lệ so với phần tử cha trực tiếp chứa nó hoặc chính nó dựa vào giá trị của thuộc tính là font-size
+rem: là đơn vị tham chiếu tỷ lệ so với phần tử gốc của website ở đây là thẻ <html> dựa vào giá trị của thuộc tính font-size
+outline : giống với boder, nhưng outline còn bao trọn border
+focus : giống thuộc tính hover nhưng focus ấn vào thì ms hiện còn hover thì di chuột vào là hiện
+  filter: grayscale(100%) hoặc blur(20px); làm mờ ảnh
+width: calc(500px - 100px); chiều dài là 500px và trừ đi 100px
+transform: scale(2,1) tang giam kich thuoc cua phan tu vi du the div tang Chieu rong 10 va tang cd 10
+transform: rotate(-20deg) :  quay lệch lên góc thứ 1
+transition : transform 0.3 ease : chuyển động
+ transform: translate(50px,100px) == với margin-left : 50px , margin-top : 100px
