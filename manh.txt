@@ -50,6 +50,7 @@ THUỘC TÍNH CSS :
 } (thuộc tính zoom ảnh)
 
 ========== git ================
+git remote rm origin
 git add .
 git commit -m "first commit"
 git push
