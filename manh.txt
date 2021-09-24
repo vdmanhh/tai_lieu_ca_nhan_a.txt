@@ -108,8 +108,14 @@ npm i @stripe/stripe-js @stripe/react-stripe-js : ben client
 npm i @react-pdf/renderer
 npm install "@david`.kucsai/react-pdf-table"
 npm i uniqueid :sever
-==========================================
-
+============================================================================================
+	Netflix 
+npm i express mongoose jsonwebtoken nodemon dotenv
+npm i crypto-js
+  const {password,...info} = user._doc // tra ve user ma ko co paswword
+  res.json(info)
+========================================================================================
+npm i body-parser cors morgan express-jwt  
 được ủy quyền thích hợp
 xác định phạm vi đánh giá
 thực hiện dấu chân thông qua các công cụ tìm kiếm
@@ -434,18 +440,150 @@ function App() {
 }
 
 export default App;
-=========================================
-thuộc tính CSS mới
-white-spcae : nowrap : hiển thị trên cùng 1 dòng
-transform : translateX(10px) dịch chuyển theo trục Ox cách trái 10px
-z-index : thứ tự hiển thị
-em: là đơn vị tham chiếu tỷ lệ so với phần tử cha trực tiếp chứa nó hoặc chính nó dựa vào giá trị của thuộc tính là font-size
-rem: là đơn vị tham chiếu tỷ lệ so với phần tử gốc của website ở đây là thẻ <html> dựa vào giá trị của thuộc tính font-size
-outline : giống với boder, nhưng outline còn bao trọn border
-focus : giống thuộc tính hover nhưng focus ấn vào thì ms hiện còn hover thì di chuột vào là hiện
-  filter: grayscale(100%) hoặc blur(20px); làm mờ ảnh
-width: calc(500px - 100px); chiều dài là 500px và trừ đi 100px
-transform: scale(2,1) tang giam kich thuoc cua phan tu vi du the div tang Chieu rong 10 va tang cd 10
-transform: rotate(-20deg) :  quay lệch lên góc thứ 1
-transition : transform 0.3 ease : chuyển động
- transform: translate(50px,100px) == với margin-left : 50px , margin-top : 100px
+====================================================================================================================================================================
+										JAVASCRIPT
+	classList.add
+	classList.remove
+	classList.toggle
+	innerText,innerHTML
+	window.innerHeight - co hieu ung "scroll"
+	sự kiện : 'click', 'scroll' : cuộn chuột, 'mouseenter':trỏ chuột vào, 'mouseleave': rời chuột ra
+  
+
+=====================================================================================================================================
+	link part 5 
+https://sites.google.com/view/bai-test-mini-part-5-so-1/bai-test-mini-part-5-so-1?authuser=0
+	1. sau giới từ + V-ing : nếu đằng sau có cụm danh từ (a/an/the/tinh tu so huu)
+		    + N 
+	2. his,our  + N
+	3. S +V + phan than(himself) hoac by/for + phan than
+	4. him,us,them  + 2ng
+	5. us + 2 ng
+LINK ĐỀ TEST P5 ĐẦU GIỜ  		https://sites.google.com/view/bai-test-mini-ni-part-5-so-6/bai-test-mini-part-5-so-1
+LINK ĐIỀN ĐÁP ÁN		https://forms.gle/dMiantkruafsVWiK9
+CHỮA ĐỀ PART 5 ĐỀ SỐ 6		https://drive.google.com/drive/folders/1E5M8qTLZ1aeg1zYUBSzDBQCQnf8aMxis?usp=sharing
+LINK ĐỀ TEST CUỐI GIỜ 		https://sites.google.com/view/toeic-fighter-listening-test-6/listening
+Link P2: https://docs.google.com/forms/d/1jvXDxke4H72BGddAFhHlGWi2VdUwLO-gT3dO6I28JcU/edit?usp=sharing
+
+====================================================================================================================================================================
+XEM TREN GIT : https://rawgit.com/vdmanhh/50_project_javascript/main/day_2_progress_step/1.html
+	thuộc tính CSS mới
+	1. white-spcae : nowrap : hiển thị trên cùng 1 dòng
+	2. transform : translateX(10px) dịch chuyển theo trục Ox cách trái 10px
+	3. z-index : thứ tự hiển thị
+	4. em: là đơn vị tham chiếu tỷ lệ so với phần tử cha trực tiếp chứa nó hoặc chính nó dựa vào giá trị của thuộc tính là font-size
+	5. rem: là đơn vị tham chiếu tỷ lệ so với phần tử gốc của website ở đây là thẻ <html> dựa vào giá trị của thuộc tính font-size
+	6. outline : giống với boder, nhưng outline còn bao trọn border
+	7. focus : giống thuộc tính hover nhưng focus ấn vào thì ms hiện còn hover thì di chuột vào là hiện
+	8. filter: grayscale(100%) hoặc blur(20px); làm mờ ảnh
+	9. width: calc(500px - 100px); chiều dài là 500px và trừ đi 100px
+	10. transform: scale(2,1) tang giam kich thuoc cua phan tu vi du the div tang Chieu rong 10 va tang cd 10
+	11. transform: rotate(-20deg) :  quay lệch lên góc thứ 1
+	12. transition : transform 0.3 ease : chuyển động
+	13. transform: translate(50px,100px) == với margin-left : 50px , margin-top : 100px
+	14. background-size : auto 100% : chinh anh vua khung hinh
+	15. background-position : center : chinh anh hien thi vi tri trung tam anh
+	16. background-repeat: no-repeat : ko lap lai anh
+	17. flex : 5;
+	18.	 p:nth-of-type(2) {
+  		background: red;
+		} : chi dinh thuoc tinh cho phan tu cua n
+
+	19.	p:nth-of-type(old) {
+		  background: red;
+		} : chi dinh thuoc tinh lẻ cho phan tu cua n
+	20.	p:nth-of-type(even) {
+  		background: red;
+		} : chi dinh thuoc tinh chẵn cho phan tu cua n
+
+
+	21. opacity: 1;
+	    transition: opacity 0.3s ease-in 0.4s; => chuyen dong mo chu 0.4s
+
+	22. btn:active{
+    	    transform: scale(0.98);
+	    } : lam cho button rung
+
+
+	23.     const btn = document.createElement('button')
+		btn.classList.ad('btnn')	=> tạo 1 phần tử là button, sau nó thêm thuộc tính class, rồi ghép n vào body hoặc có thể lả class nào đó
+		document.body.appendChild(btn)
+
+	24. textarea : lay value thi la "keyup"
+	25. background-image: linear-gradient(to bottom,red,white,black) : màu nền background từ top xuong bottom 
+	26. const data = +count.getAttribute('data-target') hoặc const data = document.querySelectorAll('.count').getAttribute('data-target')
+	    -> dùng để lấy giá trị trong 1 phần tử	
+	27. Math.ceil(x) : dùng để làm tròn số 	
+	28.   const values = document.querySelectorAll('.span')
+   	      return values[Math.floor(Math.random() * values.length)]
+	  -> sinh 1 số ngẫu nhiên trong mảng values
+	29. const data = d.split(',').filter(t=>t.trim()!=='')
+	   -> data sẽ là 1 mảng, dùng để lọc dấu phẩy
+	30. classList.contains("mystyle") : kiem tra trong danh sach class co class ten laf mystyle hay ko => kq tra ve true hoac false
+	31. cups[1].nextElementSibling.classList.contains('active') : ktra thang ke tiep cua cup[1] la cup[2] co class la active hay ko
+	32. a span:nth-child(1) : phan tu span thu 1
+	33. animation: animate1 1s linear infinite; : ten-tgianchuyedong-cungtocdo-lapvohan
+		@keyframes animate1{
+   			 0%{
+       			 left: -100%;
+   				 }
+    			 100%{
+       			 left:100%
+   				 }	
+			}
+	34.   filter: invert(1); co the lam mot icoin chuyen mau den san trang
+	35. search::palacehoder : css cho search::palacehoder 
+	36. manh.setAttribute("class", "democlass") : thêm class có tên là democlass vào div có tên là manh
+	37.  width: max-content; dung cho thuoc tinh flex neu muon cho div con 1 chieu dai co dinh
+	38. box.getBoundingClientRect().top : xem thg box nay n cach top la bn
+================================================================================================================================================================
+								Netflix-movie
+	1. câu lệnh : rafce
+	2. muon clone 1 folder ten react-admin trong repo ten youtube trong git :  git clone --single-branc -b react-admin https://github.com/safak/youtube.git .
+	3. npm i express mongoose jsonwebtoken nodemon dotenv
+	4. day la phuong phap Array.sort()
+	
+	sap xep cac so trong 1 mang theo thu tu lon dan : 
+
+		const array1 = [1, 30, 4, 21, 100000];
+			array1.sort(function (a,b){
+			return a - b;
+			});
+	=> theo thu tu nho dan la :  b-a
+
+	5.sap xep cac so trong 1 mang theo thu tu id lon dan :
+	
+		const array1 = [1, 30, 4, 21, 100000];
+			array1.sort(function (a,b){
+			return a.id - b.id;
+			});
+	=> theo thu tu nho dan la :  b.id-a.id
+
+	6. var items = [
+			  { name: 'Edward', value: 21 },
+			  { name: 'Sharpe', value: 37 },
+			  { name: 'And', value: 45 },
+			  { name: 'The', value: -12 },
+ 			 { name: 'Magnetic', value: 13 },
+ 			 { name: 'Zeros', value: 37 }
+			];
+
+	// sort by name
+	items.sort(function(a, b) {
+	  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+	  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+		  if (nameA < nameB) {
+   			 return -1;
+				  }
+ 		 if (nameA > nameB) {
+ 			   return 1;
+ 			 }
+
+ 			 // names must be equal
+ 		 return 0;
+		});
+console.log(items);
+
+
+======================================================================================================================================================
+				Chat realtime medical
