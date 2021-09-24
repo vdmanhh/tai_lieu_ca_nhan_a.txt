@@ -49,24 +49,12 @@ THUỘC TÍNH CSS :
     transition: 5s;
 } (thuộc tính zoom ảnh)
 
-========== git ================
-git remote rm origin
+================================================ git ============================================================================================
+git remote remove origin : xoa 1 repo dang ton tai trong folder
 git add .
 git commit -m "first commit"
 git push
-- z-index : 1 hoặc 2 là hiện thị trước hay hiện thị sau
--     background-image: -webkit-linear-gradient(top,white,50%,black) - đổ màu xám cho ảnh- trên top 50% là màu trắng, dưới là màu đens
--   background-color: transparent : màu trong suốt 
--   background-attachment: fixed (thuộc tính làm cho nền đứng yên khi cuộn chuột)
--  background-size: cover; làm cho cái ảnh n vừa in cái div
-- background-position-x: -10px; dịc sang trái của ảnh 10px
 
-THUỘC TÍNH ANIMATION :thuộc tính tạo chuyển động
-@-webkit-keyframes zoom{
-    from {transform: scale(1);}
-    to {transform: scale(2);}
-} => đây là zoom ảnh , mún dùng ở đâu thì gọi zoom vào - ví dụ   animation: zoom 1s ;
-=========================================================================================================================================
 =========================================================================================================================================
                                  REACT:
 import 'antd/dist/antd.css' - cai nay la cua antd import index.js
@@ -166,69 +154,11 @@ import CheckOut from './pages/CheckOut';
 import CreateCouponPage from './pages/admin/coupon/CreateCouponPage';
 import Payment from './pages/Payment';
 import { Suspense } from "react";
-======================
--- là đến loại bỏ những phần sau câu truy vấn,trong phpmysql nó dùng để ghi những comment
-
-4j41PYJMavCjriz0DjwmHQ87FumXXTyuX0nR0kyvdErzDZnzoboropbatDa8Rhf942pN2XaDpdoZWbnBrEDYEs1HMKRAJmU2
-
-snort -dev -i 1 -p -c c:\Snort\rules\ruless.txt -l c:\Snort\log -K ascii -k none
-
-
-https://github.com/Graylog2/collector-sidecar/releas
-
-sqlmap -u    -D acuart --tables 
-sqlmap -u -D acuart -T users --columns
-sqlmap -u -D acuart -T users -C pass --dump
 
 
 
-Steganography is the procedure of hiding secret data inside non-secret files to conceal the fact that a secret message is being communicated.
-The term combines the greek words steganós which means hidden and graph which means writing.
-The procedure aims to encode data in a way that is so subtle such that
-the changes cannot be noticed.
-Steganogrphy can be combined with cryptography to add an additional layer of security when communicating sensitive data.
-BPCS algorithm was introduced to overcome the shortcomings of traditional steganography techniques with limited data hiding capacity. This technique can hide up to 50% of the cover image data amount without much distortion in the visual appearance of the original image.
-In BPCS, a multi-valued image consisting of 24-bit pixels can be
-decomposed into a set of 24 binary pictures (bit planes).
-image block on the right is replaced with the meassage block on the left
-number of complex image blocks\
-
-conjugation illustration
-
-example image file (pixels are just stored in an array of RGB values
-without any header information
 ======================================================================
-
-CÔNG TY TNHH PHẦN MỀM FPT - FPT SOFTWARE :  Được đào tạo chuyên sâu về 01 trong các công nghệ Java; C#/.Net, Angular, ReactJS, NodeJS, C/C++/Embedded; Android; iOS; Manual/ Automation Test... và quy trình phát triển dự án phần mềm.
-
-CÔNG TY CỔ PHẦN MISA : VỊ TRÍ THỰC TẬP: FRESHER WEB
-
-CÔNG TY CỔ PHẦN NCCPLUS VIỆT NAM ;  Được tham gia khóa đào tạo training on job Front end (angular, vue js hoặc react-js)/ Back end Resful API - Web Application Framework - Spring Boot
-
-===================
-AHT : reactjs , nodejs
-BLAMEO : reactjs 
-CoWell : reactjs , nodejs
-FSOFT : reactjs , nodejs
-VMO : reactjs , nodejs
-MISA : có web , nhưng chưa bt là gì
-NASHTECH : có test , reactjs , nodejs
-VTI :reactjs , nodejs ,có Test
-NCCPLUS : reactjs , nodejs
-SUN : có Test, reactjs , nodejs
-VCCORP : có Test
-VIETIS : có Test
-                                              STT_TENSV_TENDEDTAI
-
-nv1 : SUN
-nv2 : CÔNG TY TNHH PHẦN MỀM FPT-FPT SOFTWARE			Vũ Đức Mạnh-B17DCAT123
-nv3 : CÔNG TY CỔ PHẦN CÔNG NGHỆ VMO holdings 					
-nv4 : CO-WELL ASIA
-nv5 : CÔNG TY CỔ PHẦN MISA                                 manhvd.B17AT123@stu.ptit.edu.vn  
-							   5031999
-sinh,đồ thị,cây,hàngđợi ngăn xếp
-celenium của python để giả mạo hành vi
-  
+			Chon truong dai hoc cho a Trung  
 Vũ Đức Mạnh-B17DCAT123
 Số thứ tự : 33
 Tên đề tài : Kiểm thử phát hiện lỗ hổng bảo mật trên hệ thống website(Lỗ hổng SQLinjection, XSS, Brute Force)   open mendelay
@@ -264,8 +194,6 @@ khắc kị bất thường ,vợ chồng ăn ở ko bền lâu, trước hợp 
 24.Đại học bách khoa : Tiếng Anh KHKT và Công nghệ 24.1 : giảng dạy bằng tiếng anh ==>(done)
 25.Đại học Kinh tế Kỹ thuật - Công nghiệp (Cơ sở Hà Nội) - 2020 lấy 19đ==>(done)
 ======================================
-	ten,mo ta, trang thai,dia chi,gia,anh,category,subcategory,discount,slug,shipping
-
 ====================================
 repair : fix, out of service, 
 advertisement: tv,radio,commercial, promotion,
@@ -536,6 +464,18 @@ XEM TREN GIT : https://rawgit.com/vdmanhh/50_project_javascript/main/day_2_progr
 	36. manh.setAttribute("class", "democlass") : thêm class có tên là democlass vào div có tên là manh
 	37.  width: max-content; dung cho thuoc tinh flex neu muon cho div con 1 chieu dai co dinh
 	38. box.getBoundingClientRect().top : xem thg box nay n cach top la bn
+	39.	z-index : 1 hoặc 2 là hiện thị trước hay hiện thị sau
+	40. background-image: -webkit-linear-gradient(top,white,50%,black) - đổ màu xám cho ảnh- trên top 50% là màu trắng, dưới là màu đens
+	41. background-color: transparent : màu trong suốt 
+	42. background-attachment: fixed (thuộc tính làm cho nền đứng yên khi cuộn chuột)
+	43. background-size: cover; làm cho cái ảnh n vừa in cái div
+	44. background-position-x: -10px; dịc sang trái của ảnh 10px
+
+	45. THUỘC TÍNH ANIMATION :thuộc tính tạo chuyển động
+		@-webkit-keyframes zoom{
+ 		   from {transform: scale(1);}
+   	           to {transform: scale(2);}
+		} => đây là zoom ảnh , mún dùng ở đâu thì gọi zoom vào - ví dụ   animation: zoom 1s ;
 ================================================================================================================================================================
 								Netflix-movie
 	1. câu lệnh : rafce
@@ -587,3 +527,4 @@ console.log(items);
 
 ======================================================================================================================================================
 				Chat realtime medical
+	npm i stream-chat stream-chat-react universal-cookie
