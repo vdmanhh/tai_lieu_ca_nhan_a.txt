@@ -370,14 +370,128 @@ function App() {
 export default App;
 ====================================================================================================================================================================
 										JAVASCRIPT
-	classList.add
-	classList.remove
-	classList.toggle
-	innerText,innerHTML
-	window.innerHeight - co hieu ung "scroll"
+	1.classList.add
+	2.classList.remove
+	3. classList.toggle
+	4. innerText,innerHTML
+	5. window.innerHeight - co hieu ung "scroll"
 	sự kiện : 'click', 'scroll' : cuộn chuột, 'mouseenter':trỏ chuột vào, 'mouseleave': rời chuột ra
-  
 
+  	6. findIndex : tìm vị trí đầu tiên trong mảng thỏa mãn 1 đk=> kêt quả trả về vị trí của phần tử đấy
+	   vd : const ages = [3, 10, 18, 20];
+
+		ages.findIndex(checkAge)   // Returns 3
+
+		function checkAge(age) {
+  		return age > 18;
+		}
+
+	7. includes : kiểm tra xem phần tử đó có trong mảng hay ko => kqua trả về là true hoặc false
+	   vd : 	const fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fruits.includes("Banana", 3);   // Returns false
+	   kiểm tra trong mảng fruits có thằng Banana bắt đầu từ vị trí thứ 3 hay ko
+
+	8. from() : tạo mảng từ 1 chuỗi
+	   vd : const myArr = Array.from("ABCDEFG"); =>kết quả : A,B,C,D,E,F,G
+
+	9. indexOf() : tìm kiếm vị trí của 1 phần tử trong mảng => kqua trả về vị trí phần tử đó
+	   vd :	const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.indexOf("Apple")   // Returns 2 => trả về vị trí thứ 2
+
+	10. isArray() : kiểm tra 1 đối tượng có phải là một mảng hay ko =>kq trả về true hoặc false
+	   vd :	const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		Array.isArray(fruits)   // Returns true
+
+	11. join() : Chuyển đổi các phần tử của một mảng thành một chuỗi:
+	   vd : const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.join()  => kết quả trả về : Banana,Orange,Apple,Mango
+	nếu viết thành " fruits.join('+') " => kqua trả về : Banana + Orange + Apple + Mango
+	
+	12. lastIndexOf() : tìm kiếm vị trí cuối cùng của phần tử đó có trong mảng, nếu mảng đó có nhiều phần tử giống nhau
+	   vd : const fruits = ["Apple", "Orange", "Apple", "Mango"]; => kết quả trả về vị trí phần tử đó
+		fruits.lastIndexOf("Apple")   // Returns 2
+	
+		const fruits = ["Orange", "Apple", "Mango", "Apple", "Banana", "Apple"];
+		fruits.lastIndexOf("Apple", 4) 
+	=> nếu thếm số và sau thì hiểu rằng tìm từ vị trí số đó đổ lại
+
+	13. pop() : loại bỏ phần tử cuối cùng trong mảng => kết quả trả về mảng chứa các phần tử còn lại
+	   vd : const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.pop(); => kết quả : Banana,Orange,Apple
+
+	14. push() : thêm một phần tử vào cuối mảng 
+	   vd : const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.push("Kiwi", "Lemon", "Pineapple");  => kết quả : Banana,Orange,Apple,Mango,Kiwi,Lemon,Pineapple
+
+	15. unshift() : thêm phần tử vào đầu mảng =>kq: trả về mảng mới
+	   vd :	const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.unshift("Lemon", "Pineapple"); => kqua : Lemon,Pineapple,Banana,Orange,Apple,Mango
+
+	16. Math.round(0.9) : làm tròn đến chữ số gần nhất
+	  => kqua = 1
+
+	17. reduce() 
+		+ trừ các số trong 1 mảng, bắt đầu từ số đầu tiên
+		vd : const numbers = [175, 50, 25];
+
+			document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+		
+			function myFunc(total, num) {
+			  return total - num;
+				}
+		=> kqua = 100
+			
+		+ Làm tròn tất cả các số trong một mảng và hiển thị tổng:
+		 vd : const numbers = [15.5, 2.3, 1.1, 4.7];
+			document.getElementById("demo").innerHTML = numbers.reduce(getSum, 0);
+
+			function getSum(total, num) {
+			  return total + Math.round(num);
+				} 
+			=> kqua = 24
+
+	18. reduceRight() : Trừ các số trong mảng, bắt đầu từ cuối:
+	   vd : const numbers = [175, 50, 25];
+
+		document.getElementById("demo").innerHTML = numbers.reduceRight(myFunc);
+		
+		function myFunc(total, num) {
+ 		 return total - num;
+		} 
+		=>kqua = -200
+
+	19. reverse() : Đảo ngược thứ tự của các phần tử trong một mảng:
+	  vd : const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.reverse();
+ 		=> kqua : Mango,Apple,Orange,Banana
+
+	20. shift() : Loại bỏ mục đầu tiên của một mảng:
+	 vd : const fruits = ["Banana", "Orange", "Apple", "Mango"];
+	     fruits.shift(); 
+	=> kqua : trả về mảng mới
+	  chú ý : fruits.shift() =  Banana
+
+	21. slice() : Chọn các phần tử từ một mảng: bắt đầu chọn từ số đầu tiên và ko chọn số cuối cùng
+	   vd : const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+		const citrus = fruits.slice(1, 3);
+	  =>kqua : trả về từ 1->2 : "Orange", "Lemon"
+
+	22. some() : Kiểm tra xem có giá trị nào trong mảng thỏa mãn 1 điều kiện nào ko  không: => kqua trả về true hoặc false
+	  vd : const ages = [3, 10, 18, 20];
+
+		ages.some(checkAdult)   // Returns true
+
+		function checkAdult(age) {
+ 		 return age >= 18;
+		}
+
+	23. splice() : thêm 1 phần tử vào mảng(chỉ số thứ nhất là vị trí thêm, chỉ số thứ 2 là xóa số phần tử)
+	   vd : const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+		// At position 2, add 2 elements:
+		fruits.splice(2, 0, "Lemon", "Kiwi")
+		fruits.splice(2, 1, "Lemon", "Kiwi") => thêm vào vị trí 2 và xóa đi 1 phần tử => kqua : Banana,Orange,Lemon,Kiwi,Mango
+		chú ý : xóa trước r ms thêm
 =====================================================================================================================================
 	link part 5 
 https://sites.google.com/view/bai-test-mini-part-5-so-1/bai-test-mini-part-5-so-1?authuser=0
@@ -476,6 +590,23 @@ XEM TREN GIT : https://rawgit.com/vdmanhh/50_project_javascript/main/day_2_progr
  		   from {transform: scale(1);}
    	           to {transform: scale(2);}
 		} => đây là zoom ảnh , mún dùng ở đâu thì gọi zoom vào - ví dụ   animation: zoom 1s ;
+	46. transform-origin : 0% 10% : đây là xác định tâm quay, cách bên trái 0%, cách top 10
+	47. perspective : 800px : độ lồi của ảnh, vd sử dụng đi kèm với transform : rotateX(10deg) : được viết ở div bố
+	48. transform:scale(1) : thuộc tính zoom, giá trị 1 là ko zoom
+	48. transform:scale(2) : thuộc tính zoom, zoom to lên gấp 2
+	50. transition-delay : 0.5s : sau 0.5s thì ms thực hiện hành động
+	51. transiton-timing-function : ease,ease-in,ease-out,linear 
+		ease : nhanh-cham
+		ease-in : nhanh dần
+		ease-out : chậm dần
+		linear : chuyển động đều
+	52. text-transform : uppercase : chữ hoa
+====================================================================================================================================================================
+						Mot so thu vien hay trong css 
+	1. duong dan : <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+	 dia chi trang : https://greensock.com/
+	 cu phap :   TweenMax.staggerFrom($('.mains'),1,{top:300,opacity:0},0.1) 
+	(chuyen dong 1s, tu duoi len cach top 300, chuyen dong từ mờ đến đậm, các phần tử chuyển động cách nhau 0.1s)
 ================================================================================================================================================================
 								Netflix-movie
 	1. câu lệnh : rafce
@@ -527,4 +658,274 @@ console.log(items);
 
 ======================================================================================================================================================
 				Chat realtime medical
-	npm i stream-chat stream-chat-react universal-cookie
+	client :  npm i stream-chat stream-chat-react universal-cookie
+	server : npm init -y,  npm i bcrypt crypto dotenv express getstream stream-chat nodemon twilio cors
+======================================================================================================================================================
+				JQery
+	1. slideUp() : thu nho lai vi du :  $('.noidung').slideUp()
+	2. slideDown() : mo rong ra
+	3. slideToggle() : vua thu vua mo
+	4. toggleClass() : vua them vua xoa class
+	5. addClass() : them class, giong classList.add trong javascript
+	6. removeClass() xoa class
+	7. next() : chi thanh phan tiep theo : vd $(this).next().addClass('active')
+	8.   $('.actives').addClass('tayphai').one('webkitAnimationEnd', function (event) {
+                    $('.tayphai').removeClass('tayphai')
+                   
+                });
+	=> ham one thuc hien 1 hanh dong sau khi hanh dong khac xay ra
+	9.   thoigian = setInterval(()=>{
+           	$('.phais').trigger('click')
+         	 },5000) : cu sau 5s lai tu dong click nua phais
+	=> trigger : kich hoat 1 hanh dong
+	10.  $(window).scroll(function () { 
+                    let data = $('html, body').scrollTop()
+                    if((data>200) && (data<800)){
+                        $('.mains').addClass('actives')
+                    
+                    }
+                    else{
+                        $('.mains').removeClass('actives')
+                       
+                    }
+                });
+	=> hieu ung cuon chuot de tinh khoang cach cua body
+	11. thu viện để sắp xếp các ảnh đầy trong 1 khối :  tai trong trang isotope
+	sử dụng : thêm link thư viện vào html và trong script : 
+		 $('ul').isotope({
+               		 itemSelector : ".haha"
+           		 }) => ul là class bố, haha là class con
+	12. lay gia tri hoac gan, trong div , giong nhu thuoc tinh innerHTML cua javascript
+	su dung : text() : vi du : $('manh').text()
+	13. lay gia tri trong div vi du 1 kieu mk dinh nghia : data-manh => $(this).data('manh')
+	14. $('.manh').hasClass(data) : kiem tra thang manh co class data hay ko
+	15.$('.manh').each(()=>{}) , dung de duyet, giong voi forEach cua javascript
+	16. $('.manh').fadeIn() : cho thang class manh hien thi == voi $('.manh').show()
+	17. $('.manh').fadeOut() : cho thang fadeOut mat == voi $('.manh').hide()
+	18. $('.xanh').index() : dung de lay vi tri phan tu
+======================================================================================================================================================
+	https://sites.google.com/view/test-full-so-3-toeic-fighter/trang-ch%E1%BB%A7
+LINK ĐIỀN ĐÁP ÁN NGHE		https://docs.google.com/forms/d/1-pVApl270pQSXE_UiOrLFJZvdrrW-OiCbKCGtMOtuqc/edit?usp=sharing
+LINK ĐIỀN ĐÁP ÁN ĐỌC		http://form-timer.com/start/df7f81ee
+PHP Fatal error:  Uncaught Error: Class 'App\Controllers\BaseController' not found in C:\xampp\htdocs\learn\app\Controllers\helloworld.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\learn\app\Controllers\helloworld.php on line 5
+
+Fatal error: Uncaught Error: Class 'App\Controllers\BaseController' not found in C:\xampp\htdocs\learn\app\Controllers\helloworld.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\learn\app\Controllers\helloworld.php on line 5
+==========================================================================================================================================================
+									PHP 
+			1. start server : php spark serve
+			2. link css : controllerr :        helper('html');  ,  helper('url'); ,   <?php echo link_tag('css/colors.css'); ?>
+			3. form :  <form action="<?php echo base_url()."/vu/getdata" ?>" method="post" accept-charset="utf-8">
+			4. lay data tu form :   + echo  $this->request->getPost("so");      
+  					     + echo  $this->request->getPost("gia");;
+==========================================================================================================================================================
+									Laravel
+			
+	1. tao project : composer create-project laravel/laravel tenproject
+	2. echo $manh  = {{$manh}}
+	3. tao controller tren cmd :path :  htdocs/laravel8/basic :php artisan make:controller ContactController
+	4. tao milderware : php artisan make:middleware Ten
+	5. khoi tao serve : php artisan serve
+	6. link : {{url('/home')}} hoac : {{URL::to('/home')}}
+		hoac cach khac dat ten cho route r dung 
+		=> Route::get('/home', function () {
+   			 return view('welcome');
+			})->name('con');
+		su dung : {{ route('con') }}
+	7. cai dat trong cmd : path : htdocs/laravel8/basic : composer require laravel/jetstream (va : php artisan jetstream:install livewire)
+		cai nay de tao cac view va controller cho phan authentication: thuc chat la tao san cac trang login va register
+		sau khi cai cac plugin thi cai dat trong cmd : php artisan migrate (de import cac bang vao csdl)
+		sau khi cai dat thi thuc hien tiep trong cmd : npm install (va  : npm run production) de fix loi 'The Mix manifest does not exist when it does exist'
+
+	8. cac cau lenh trong database : 
+		- User::all() => lay ta ca nguoi dung
+		- Category::latest()->get(); lay tat ca cate sap xep theo thoi gian moi nhat
+	9. gui du lieu qua view 
+		  $users = User::all();
+    		return view('dashboard',compact('users'));
+
+	10. cach viet foreach de do du lieu
+			@foreach($user as %value)
+	
+			@endforeach
+	11. {{$user->created_at->diffForHumans()}} tinh khoang tgian nguoi dung tao mk tu truoc toi nay : vi du=> 43 minute ago
+	12. tao 1 model :  php artisan make:model Category -m (sau khi tao trong project xong, muon migrate vao trong database thi nhap : php artisan migrate)
+	13.  return Redirect()->back()->with('success','Category was created success !!!'); quay tro la view truoc do va gui 1 gia tri la success co value la Category was created success !!!
+	14. co 2 cach de lay du lieu tu 2 bang
+ 	- cach 1 :
+		public function manhdv(){
+       		 return $this->hasOne(User::class,'id','user_id');
+   		 }  => viet o trong model
+	cau lenh su dung : $categories = Categories::latest()->paginate(5);
+
+	- cach 2 : su dung cau lenh query
+	$categories = DB::table('categories')
+		      -> join('users','categories.user_id','users.id')
+		      -> select ('categories.*','users.name')
+		      -> latest()->paginate(5);
+	15. cau lenh cmd : dung de cai dat goi kiem tra kich thuoc anh truoc khi tai : composer require intervention/image
+		sau do vao config->app.php-> them dong Intervention\Image\ImageServiceProvider::class vao dong 168	
+		sau do them dong : 'Image' => Intervention\Image\Facades\Image::class  vao cuoi config->app.php
+		sau do chay lenh cmd : php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+	=> thuc chat cua viec nay la khi mk tai anh len muon anh do co kich thuoc theo mong muon cua mk 
+	16. cau lenh cmd cho thay anh user : php artisan storage:link
+		sau do vao .env thay APP_URL tu localhost thanh => http://127.0.0.1:8000/
+	=>dieu nay de hien thi anh avatar hien thi tu may tinh
+	17. chia giao dien lam nhieu phan : @yield('admin1')
+		@extends('admin.admin_master')
+		@section('admin1')
+
+		@endsection
+		=>muc dich cua viec nay la host ko cho load trang co size lon, nen phai chia thanh file nho hon de load
+	sau do chia file lon : @include('admin.body.sidebar')
+	18.  php artisan make:migration add_column_user_table --table=users : them 1 column vao DB
+	19. tao session :   session(['key' => 'value']);
+	20. lay session :   $value = $request->session()->get('key');
+	21. cap nhat  : $request->session()->put('key', 'value');
+	222. xoa session : $request->session()->forget('key');
+	23. xoa toan bo : $request->session()->flush();
+	24. php artisan make:migration alter_table_users_add_avatar
+					đẩy lên server	
+        25. Co the lay duoc gia tri 'prefix' va ten cua route
+		=> $prefix = Request::route()->getPrefix();
+		=> $route = Route::current()->getName();
+	php artisan make:migration add_column_user_table --table=users
+	1. chạy lệnh cmd : php artisan config:cache
+	2. chay tiep : php artisan cache:clear
+	3. chay tiep :php artisan view:clear
+	4. sau do nen file basic thanh file zip
+	5. sau đó và trang : axiomdynamicsbd.com/cpanel axiomdynamicsbd.com:2083
+	6. xoa 
+
+
+LINK ĐỀ TEST 		https://sites.google.com/view/test-full-so-5-toeic-fighter/reading
+	LINK ĐIỀN ĐÁP ÁN NGHE		https://forms.gle/GwnM7DHiYwjX6ap87
+	LINK ĐIỀN ĐÁP ÁN ĐỌC		https://addonforge.com/timer/1FAIpQLSfd7M7Z8DwCcbsGRzV_BGzpd51sRYZqarGfH50XMpDSOZX9-A
+
+	1. cai :composer require tymon/jwt-auth
+	2. vao congfig/app : dong 178 them : Tymon\JWTAuth\Providers\LaravelServiceProvider::class, tiep tuc them  
+	'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,  dong cuoi
+	3. chay lenh : php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+	4. chay lenh : php artisan jwt:secret
+	5. vao model/user : them : use Tymon\JWTAuth\Contracts\JWTSubject;
+	6. trong model/user dong 15 them : implements JWTSubject
+	7 sau do them 2 ham vao dong  52
+	  public function getJWTIdentifier() {
+        return $this->getKey();
+   		 }
+ 	   public function getJWTCustomClaims() {
+       	 return [];
+   		 }    
+
+		
+	===================================================================================================================================================
+		
+						kiểm tra và khai thác lỗ hổng CVE ZERO 2020-1472 , 2018-0802 
+	Hacker có thể lợi dụng Zerologon để chiếm quyền Domain Controller trên bất kỳ phiên bản nào của Windows Server 2019 hoặc Windows
+	 Server 2016 cũng như bấtkỳ biến thể nào của Windows Server phiên bản 1909, Windows Server phiên bản 1903, Windows Server phiên bản
+	 1809 (Datacenter và Standar), Windows Server 2012 R2, Windows Server 2008 R2 Service Pack 1.
+
+	Zerologon là gì?
+	Về cơ bản, Zerologon hay CVE-2020-1472 là kết quả của một vấn đề trong sơ đồ xác thực mật mã Netlogon Remote Protocol. Đây là giao thức 
+	được sử dụng để xác thực người dùng và các cỗ máy trong mạng dựa trên domain và cũng được sử dụng để cập nhật mật khẩu máy tính từ xa. 
+	Thông qua lỗ hổng này, hacker có thể mạo danh máy khách và thay thế toàn bộ mật khẩu của Domain Controller. Điều này giúp hacker chiếm được
+	 quyền quản trị miền.
+https://quantrimang.com/cach-cai-dat-active-directory-trong-windows-server-2012-154180
+
+ CVE-2019-0708 là một lỗ hổng thực thi mã từ xa trong Dịch vụ kết nối Máy tính từ xa của Windows (Windows Remote Desktop Services).
+Lỗ hổng này cho phép kẻ tấn công khai thác bằng cách kết nối đến hệ thống mục tiêu thông qua Remote Desktop Protocol. Lỗ hổng rất 
+nguy hiểm vì nó cho phép kẻ tấn công thực thi được những câu lệnh trên hệ điều hành nếu khai thác thành công mà không cần phải thực 
+hiện bước xác thực cũng như đòi hỏi về tương tác người dùng, dẫn đến việc kẻ tấn công chiếm quyền kiểm soát hệ thống và thực hiện những
+ hành động theo ý muốn của chúng
+
+APPLIANCES <i class="fab fa-accessible-icon"></i>
+.Refrigerators
+..Double Door
+..Mini Regrerators
+..Single Door
+
+.Televisions
+..Big Screen TVs
+..OLED TVs
+.. Smart TVs
+
+.Washing Machines
+..Energy Efficent
+..Washer Dryers
+..Washer Only
+========
+BEAUTY <i class="fab fa-acquisitions-incorporated"></i>
+.Bady Care
+..Baby Diapers
+..Baby Food
+..Baby Wipes
+
+.Beauty and Personal
+..Eys Makeup
+..Hair Care
+..Lip Makeup
+
+.Food and Drinks
+..Bererage
+..Chocolates
+..Snacks
+==========
+SWEET HOME <i class="fas fa-ad"></i>
+.Home Decor
+..Clocks
+..Lightings
+..Wall Decor
+
+. Home Funnishings
+..Bed Liners
+..Bedsheets
+..Blacnkers
+
+. Living Room
+..Coffee Tables
+..Dinning Sets
+..TV Units
+========
+
+FASHION <i class="fas fa-address-book"></i>
+.Mans Bottom Ware
+..Mans Cargos
+..Mans jeans
+.. Mans Trousers
+
+.Mans FootWare
+..Mans Casual Shoes
+..Mans Formal Shoes
+..Mans Sports Shoes
+
+. Mans Top Ware
+..Mans Casual Shirts
+..Mans Kurtas
+..Mans Tshirt
+
+. Women Footware
+..Women Sheakers
+.. Women Flats
+..Women Heels
+======
+ELECTRONIC <i class="fab fa-airbnb"></i>
+.Computers
+..Monitors
+..Printers
+..Projectors
+
+.Gaming
+..Gaming Keyboard
+..Gaming Mouse
+..Gaming Mousepads
+
+.Mobile Accessory
+..Designer Cases
+..Plain Cases
+..Screen Guards
