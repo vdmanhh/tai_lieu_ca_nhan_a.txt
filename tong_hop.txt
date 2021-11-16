@@ -471,11 +471,12 @@ export default App;
 	=> kqua : trả về mảng mới
 	  chú ý : fruits.shift() =  Banana
 
-	21. slice() : Chọn các phần tử từ một mảng: bắt đầu chọn từ số đầu tiên và ko chọn số cuối cùng
+	21. slice() va subtring gion het nhau(nhung slice() lam dc voi mang va chuoi, subtring chi lam duoc voi chuoi) : Chọn các phần tử từ một mảng: bắt đầu chọn từ số đầu tiên và ko chọn số cuối cùng
 	   vd : const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 		const citrus = fruits.slice(1, 3);
 	  =>kqua : trả về từ 1->2 : "Orange", "Lemon"
-
+	neu const citrus = fruits.slice(1); =>"Orange", "Lemon", "Apple", "Mango"
+	neu const citrus = fruits.slice(0); hoac citrus = fruits.slice() =>"Banana", "Orange", "Lemon", "Apple", "Mango"
 	22. some() : Kiểm tra xem có giá trị nào trong mảng thỏa mãn 1 điều kiện nào ko  không: => kqua trả về true hoặc false
 	  vd : const ages = [3, 10, 18, 20];
 
@@ -492,6 +493,35 @@ export default App;
 		fruits.splice(2, 0, "Lemon", "Kiwi")
 		fruits.splice(2, 1, "Lemon", "Kiwi") => thêm vào vị trí 2 và xóa đi 1 phần tử => kqua : Banana,Orange,Lemon,Kiwi,Mango
 		chú ý : xóa trước r ms thêm
+
+	24. toUpperCase : chuyen het ve chu hoa
+	    toLowerCase : chuyen het ve chu thuong
+	    startsWith : xem chuoi do co bat dau bang 1 tu khoa hay khong
+	    endsWith  : xem chuoi do co bat dau bang 1 tu khoa hay khong
+
+		let bien = 'hi my name is Manh'
+		console.log(bien.toUpperCase ())  => MY NAME IS MANH
+		console.log(bien.toLowerCase ())  => my name is manh
+		console.log(bien.startsWith ('hi'))  => true
+		console.log(bien.endsWith ('mannn'))  => false
+	25. concat : them phan tu vao chuoi
+	    split() : tach chuoi
+		let m1 = 'manh duc vu';
+		let m2 = 'duc';
+		let m3 = 'vu'
+
+		let m = m1.concat(m2,m3); => manh duc vu
+		console.log(m1.split(' ')[1]); => duc
+	
+	26. const manh ={
+   		 name : 'manh',
+   		 age :'22'
+		}
+	JSON.stringify(manh) : chuyen dang du lieu sang JSON => { 'name ': 'manh', 'age ':'22'}
+	JSON.parse() : chuyen dang JSON  sang lu lieu=> { name : 'manh', age :'22'}
+	27. toFixed : làm tròn
+		const bien =3.14323244
+			bien.toFixed(3)  => 3.143
 =====================================================================================================================================
 	link part 5 
 https://sites.google.com/view/bai-test-mini-part-5-so-1/bai-test-mini-part-5-so-1?authuser=0
@@ -759,7 +789,7 @@ Stack trace:
 	14. co 2 cach de lay du lieu tu 2 bang
  	- cach 1 :
 		public function manhdv(){
-       		 return $this->hasOne(User::class,'id','user_id');
+       		 return $this->hasOne(User::class,'id','user_id'); hoặc beLongsto
    		 }  => viet o trong model
 	cau lenh su dung : $categories = Categories::latest()->paginate(5);
 
@@ -768,6 +798,7 @@ Stack trace:
 		      -> join('users','categories.user_id','users.id')
 		      -> select ('categories.*','users.name')
 		      -> latest()->paginate(5);
+
 	15. cau lenh cmd : dung de cai dat goi kiem tra kich thuoc anh truoc khi tai : composer require intervention/image
 		sau do vao config->app.php-> them dong Intervention\Image\ImageServiceProvider::class vao dong 168	
 		sau do them dong : 'Image' => Intervention\Image\Facades\Image::class  vao cuoi config->app.php
@@ -789,18 +820,75 @@ Stack trace:
 	21. cap nhat  : $request->session()->put('key', 'value');
 	222. xoa session : $request->session()->forget('key');
 	23. xoa toan bo : $request->session()->flush();
+
+			Session::put('manh',['name'=>haha])
+			Session::put('manh')
+			Session::forget('manh')
 	24. php artisan make:migration alter_table_users_add_avatar
 					đẩy lên server	
         25. Co the lay duoc gia tri 'prefix' va ten cua route
 		=> $prefix = Request::route()->getPrefix();
 		=> $route = Route::current()->getName();
-	php artisan make:migration add_column_user_table --table=users
+	26. php artisan make:migration add_column_user_table --table=users
+	27. tach trong laravel giống như trong reactjs : $color = explode(',',old_color)
+	28.  Cài đặt gói packet Cart : composer require bumbummen99/shoppingcart
+	   sau khi cai xong thi cai tiep : php artisan vendor:publish --provider="Gloudemans\Shoppingcart\ShoppingcartServiceProvider" --tag="config"
+	29. cac cau lenh ve Auth() 
+			Auth::check(),
+			Auth::id()
+			Auth::user()
+			Auth::attempt()
+	30. cai dat goi thanh toan qua stripe :composer require stripe/stripe-php
+		sau do import thu vien vao trang home_user : <script src="https://js.stripe.com/v3/"><script/>
+	31. cai dat goi PDF : composer require barryvdh/laravel-dompdf
+	 sau do vao config/app.php: tai dong 169 paste : Barryvdh\DomPDF\ServiceProvider::class, roi paste dong 232 : 'PDF' => Barryvdh\DomPDF\Facade::class,
+	32. co the su dung forelse de kiem tra 1 mang có rỗng hay ko 
+			@forelse
+			@empty
+			@endforelse
+	33. có thể sử dụng  @guest(giống như một câu điệu kiện if nhưng sẽ check xem đã đăng nhập hay chưa)
+		@guest
+		@else
+		@endguset
+	34. có thể lấy dc tổng tiền theo ngày tháng năm
+
+		$date = date('d-m-y');
+		$day = App\Models\Order::where('order_date',$date)->sum('amount');
+
+		$months = date('F');
+		$month = App\Models\Order::where('order_month',$months)->sum('amount');
+
+		$years = date('Y');
+		$year = App\Models\Order::where('order_year',$years)->sum('amount');
+	35. tao pagination : php artisan vendor:publish --tag=laravel-pagination
+		sau khi import xong thi 1 forder se dc tao trong : view/vendor/pagination
+
+	===================================================================================================================================================
+						React-Laravel
+	Cai dat passport de dung chuc nang authentication
+	1. composer require laravel/passport    /https://laravel.com/docs/8.x/passport
+		sau do thi chay : php artisan migrate
+		sau do cai tiep : php artisan passport:install -> sau khi cai xong thi n tao ra 2 ma secret client
+		vao env them CLIENT_1 = Ma secret 1
+			     CLIENT_2 = Ma secret 2
+		sau do vao App\Providers\AuthServiceProvider them vao dong 27, roi bo comment dong 16
+			if (! $this->app->routesAreCached()) {
+           			 Passport::routes();
+      				  }
+		sau do vao config/auth.php dong 40 them
+			'api' => [
+     			   'driver' => 'passport',
+        		   'provider' => 'users',
+   				 ],
+
+	===================================================================================================================================================
 	1. chạy lệnh cmd : php artisan config:cache
 	2. chay tiep : php artisan cache:clear
 	3. chay tiep :php artisan view:clear
 	4. sau do nen file basic thanh file zip
 	5. sau đó và trang : axiomdynamicsbd.com/cpanel axiomdynamicsbd.com:2083
 	6. xoa 
+
 
 
 LINK ĐỀ TEST 		https://sites.google.com/view/test-full-so-5-toeic-fighter/reading
@@ -833,9 +921,18 @@ LINK ĐỀ TEST 		https://sites.google.com/view/test-full-so-5-toeic-fighter/rea
 
 	Zerologon là gì?
 	Về cơ bản, Zerologon hay CVE-2020-1472 là kết quả của một vấn đề trong sơ đồ xác thực mật mã Netlogon Remote Protocol. Đây là giao thức 
-	được sử dụng để xác thực người dùng và các cỗ máy trong mạng dựa trên domain và cũng được sử dụng để cập nhật mật khẩu máy tính từ xa. 
+	được sử dụng để xác thực người dùng và các máy trong mạng dựa trên domain và cũng được sử dụng để cập nhật mật khẩu máy tính từ xa. 
 	Thông qua lỗ hổng này, hacker có thể mạo danh máy khách và thay thế toàn bộ mật khẩu của Domain Controller. Điều này giúp hacker chiếm được
 	 quyền quản trị miền.
+
+			web : xét mật khẩu tất cả các tài khoản trên máy chủ bằng null
+			sau đó lấy tất cả mã hash của tất cả tài khoản ấy về
+			rồi lấy quyền cmd
+
+			quet domain IP
+			nmap -p 445,389 -sV -v 113.161.152.116
+			cổng 389 TCP, UDP
+			SMB qua IP (Microsoft-DS): cổng 445 TCP, UDP
 https://quantrimang.com/cach-cai-dat-active-directory-trong-windows-server-2012-154180
 
  CVE-2019-0708 là một lỗ hổng thực thi mã từ xa trong Dịch vụ kết nối Máy tính từ xa của Windows (Windows Remote Desktop Services).
@@ -929,3 +1026,89 @@ ELECTRONIC <i class="fab fa-airbnb"></i>
 ..Designer Cases
 ..Plain Cases
 ..Screen Guards
+
+find / -name doom* 2>/dev/null
+
+git clone https://github.com/SecureAuthCorp/impacket.git
+
+5*b + a div 4*3  (với a=12, b=4)
+
+x,y,z : real 
+c : char
+i,j:interger
+câu 5 chọn B(nên nhớ đề bài bảo in ra "x=12.41", nên in ra phải có cả số X, mà muốn có số X thì phải đăt X trong dấu ngoặc '')
+ý A là in ra x, mk thay x vào thì kết quả in ra là 12,41235
+ý B n có kí tự x được đặt trong dấu ngoặc '', nên khi in ra n có dạng x=12,41
+ý C là thay x=12,41235 rồi chia cho 5, khi in ra là 1 số khác đề bài
+ý D cũng vậy, chia cho5 xong thì chia tiêp cho 2
+
+gpgconf --kill all
+
+
+https://drive.google.com/file/d/1KC9UwDCFa7IXFx2Qq7YNxqGQuKHywnoK/view?usp=sharing
+- https://forms.gle/vjtg2gPi8p3xrYAu8
+Part 5 BoTro NangCao So 01	
+- https://drive.google.com/file/d/1hWUpc9i_R5AByC3QuHq52vS6IMxZ1Snx/view?usp=sharing
+- https://forms.gle/oFRv2iqt7X81enRx6
+Part 7 BoTro NangCao So 02	
+- https://forms.gle/k61pEkRe4QHgDmGD7 
+- https://drive.google.com/file/d/1MoWQXkh8XXX889bbck29O8AXBXAdyVZk/view?usp=sharing
+Part 5 BoTro NangCao So 02	
+- https://forms.gle/ZNC3PM7d4hB1BiLE6
+- https://drive.google.com/file/d/1Ie-0e8gbqfrWJ3hoChHo6UhGEmkrhkRg/view?usp=sharing
+Part 7 BoTro NangCao So 03	
+- https://drive.google.com/file/d/1k9tCu9REmilqu4QUcS75LxDQuPC9Z49e/view?usp=sharing
+- https://forms.gle/JJ9UAzMhk7ZBLKzw5
+Part 5 BoTro NangCao So 03	
+- https://drive.google.com/file/d/1zfi6UZETD_TWkqgeXI3oex064vJLTBLn/view?usp=sharing
+- https://forms.gle/es7a6P3zEsNsadDP6
+sk_test_51IktQVD7EFDXuxlii4ooMWSYWYUbzANZusKtyvaM9PJiDdSnhKLp66pVktaxqU3h4gT1XU240LC7H9DT1icenZv1002r3v5Inp
+
+sđt lớp trưởng :0983411065
+
+
+ecryption with user b is public key
+ecryption with user a is private key
+ecryption with session key
+zip compression function
+Radix-64 conversion function
+
+
+Part 7 BoTro NangCao So 07
+- Link làm bài: https://sites.google.com/view/toeic-fighter-nang-cao-p7-07/reading
+- Link điền đáp án: http://form-timer.com/start/6fd731e2
+- File PDF:	https://drive.google.com/drive/folders/1XisVy5lk9kG5rjWWzIHF1-XS0-S8LpRF
+=====
+Part 5 BoTro NangCao So 06
+- Link làm bài: https://sites.google.com/view/toeic-fighter-p5-nang-cao-06/p5-n%C3%A2ng-cao-s%E1%BB%91-06 
+- Link điền đáp án: https://form-timer.com/start/0e7fa146
+- File PDF:	https://drive.google.com/file/d/1GKLBlFTALslhZgw33OEhTlk5sW1_RDmq/view?usp=sharing
+=====================
+Part 7 BoTro NangCao So 08
+- Link làm: https://sites.google.com/view/toeic-fighter-nang-cao-p7-08/reading
+- Link điền đáp án	http://form-timer.com/start/d51396dc
+- File PDF	https://drive.google.com/file/d/1nES7FzLAeWF2PKGQ673YD7TlipQhIq0f/view?usp=sharing
+
+Part 5 BoTro NangCao So 08
+- Link làm: https://sites.google.com/view/toeic-fighter-p5-nang-cao-08/p5-n%C3%A2ng-cao-s%E1%BB%91-07
+- Link điền đáp án	https://test.gclocked.com/?form=-MndcABDXdQORbednAhk
+- File PDF	https://drive.google.com/file/d/1WkJSyNAwZ8JSA52z_4itY4Xt8IpKJWDd/view?usp=sharing
+
+Part 7 BoTro NangCao So 09
+- Link làm: https://sites.google.com/view/toeic-fighter-nang-cao-p7-09/reading
+- Link điền đáp án	http://form-timer.com/start/7248de14
+- File PDF	https://drive.google.com/file/d/1Z-zxz2e3Tzwf-jGRXbctO2_JcgGa_wz8/view?usp=sharing
+
+
+Part 5 BoTro NangCao So 10	https://sites.google.com/view/toeic-fighter-p5-nang-cao-10/p5-n%C3%A2ng-cao-s%E1%BB%91-09
+	https://forms.gle/QYhm7oawdzFXgxVw6
+File PDF	https://drive.google.com/file/d/1aaie-ax5eb45VykAleLOuIk1Bxq1klQN/view?usp=sharing
+Part 7 BoTro NangCao So 11	https://sites.google.com/view/toeic-fighter-nang-cao-p7-11/reading
+	http://form-timer.com/start/7fca6f0e
+File PDF	https://drive.google.com/file/d/13v--kyHeQEifThFMYKC-DXNoEtCF2rSb/view?usp=sharing
+chuyện gì cũng giải quyết dc mà, cứ để mai b sang xem chuyện ntn rồi mk cùng nhau giải quyết
+đừng nghĩ ngợi nữa nhé
+
+===============================
+python3 run.py
+===============================
