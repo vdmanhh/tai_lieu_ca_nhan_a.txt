@@ -43,6 +43,7 @@ THUỘC TÍNH CSS :
 	  - align-items:center (căn các phần tử ra chính giữa)
           - align-items:flex-start ( dồn các phần tử lên góc trên)
           - align-items:flex-end ( dồn các phần tử xuống góc dưới
+	  - flex-basis: 200px; đặt độ dài ban đầu
 - img:hover{
     transform: scale(2) - day la zoom;
     opacity: 0.7; - day la tao mờ ảnh
@@ -80,7 +81,7 @@ npm init -y
 npm i express body-parser mongoose cors morgan express-jwt firebase-admin jsonwebtoken nodemon dotenv
 npm i slugify
 npm i cloudinary
-
+npm i nodemon 
 npm i react-image-file-resizer: dùng cho file upload
 npm i typewriter-effect : hieu ung may danh chu
 npm i react-responsive-carousel :
@@ -620,6 +621,8 @@ XEM TREN GIT : https://rawgit.com/vdmanhh/50_project_javascript/main/day_2_progr
  		   from {transform: scale(1);}
    	           to {transform: scale(2);}
 		} => đây là zoom ảnh , mún dùng ở đâu thì gọi zoom vào - ví dụ   animation: zoom 1s ;
+
+		animation-fill-mode : backwards => giữ nguyen trạng thái keyframe 0% sau khi có thuoc tinh animation-delay
 	46. transform-origin : 0% 10% : đây là xác định tâm quay, cách bên trái 0%, cách top 10
 	47. perspective : 800px : độ lồi của ảnh, vd sử dụng đi kèm với transform : rotateX(10deg) : được viết ở div bố
 	48. transform:scale(1) : thuộc tính zoom, giá trị 1 là ko zoom
@@ -880,6 +883,8 @@ Stack trace:
      			   'driver' => 'passport',
         		   'provider' => 'users',
    				 ],
+	2. npm install react-slick --save : slider
+	   npm install slick-carousel --save
 
 	===================================================================================================================================================
 	1. chạy lệnh cmd : php artisan config:cache
@@ -1112,3 +1117,211 @@ chuyện gì cũng giải quyết dc mà, cứ để mai b sang xem chuyện ntn
 ===============================
 python3 run.py
 ===============================
+
+
+
+
+========================================================================================================================================================================
+					react 
+		1. useHistory thay bang let history = useNavigate();
+			import { useNavigate } from 'react-router-dom';
+
+
+============================================================================================================================================================
+
+
+お気に入りの
+
+
+
+pv
+https://docs.google.com/document/d/1ILZF3YhfBpS7xsRGVp7zOcMzT_jDV7cx0iZpcFoC-vQ/edit
+https://docs.google.com/document/d/1OhnLmuwaASPteoN8qQ6NtJ2tDeD3JmHrRv8GstLEFVo/edit
+Bình Trần Hữu15:17
+https://www.youtube.com/playlist?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5
+https://www.youtube.com/playlist?list=PL_-VfJajZj0U1MSx1IMu13oLJq2nM97ac
+
+
+life cycle compoment
+https://freetuts.net/component-life-cycle-trong-reactjs-2387.html
+https://mycv.vn/cv-suggestor
+Infomation Security 
+(Current GPA: 2.75)
+Posts and Telecommunications Institute of Technology (PTIT)
+HTML/PUG/CSS/SCSS/Javascript
+
+Knowledge of working with HMTL5, CSS3, Javascript (ES6), PUG, SCSS
+Knowledge of working with Bootstrap
+
+
+Knowledge of working React Hooks
+Knowledge of working Redux, Redux middleware (Redux Thunk, Redux Toolkit)
+Knowledge of working with React Router DOM
+Knowledge of fetching data with Fetch, Axios
+Basic of working React UI Libraries: Reactstrap, Ant Design, Semantic UI
+Basic with consuming and designing RESTful APIs
+Basic of working NextJS
+Knowledge of working with GIT, NPM and YARN
+
+
+Basic of design database and writing API with MongDB and Express
+
+Technologies used:
+
+PUG, SASS, Bootstrap
+
+
+
+Completion time:
+
+13/08/2021 - 26/08/2021 (13 days)
+
+
+
+Repository:
+
+https://github.com/awesome-academy/OE39-FE-PR1-Binh
+CERTIFICATE
+Certificate T3H
+
+Graduated from ReactJS course at T3H
+Many Certificate UDEMY
+
+
+Become a Front-end developer professional
+Looking forward to finding a stable job in the long term
+Looking forward to finding a job with good promotion opportunities
+Actively learn and gain working experience to become a Fullstack programmer in the next time.
+
+
+Mô tả công việc
+• Tham gia tìm hiểu chuyên sâu về Front-End để chuẩn bị các kiến thức và hoàn thiện kỹ năng trước khi tham gia làm việc tại các dự án lớn của Công ty.
+• Bạn sẽ trở thành một lập trình viên nắm chắc kiến thức cơ bản và nâng cao về ngôn ngữ JavaScript, hiểu và vận dụng tốt các công nghệ Web Frontend như: HTML5/CSS3, Bootstrap 4, ES6, TypeScript, đặc biệt có khả năng sử dụng thành thạo ReactJS – một trong những thư viện JavaScript mạnh & phổ biến nhất do Facebook phát triển từ 2013 và đang được sử dụng bởi hàng trăm công ty lớn trên thế giới như: Netflix, Airbnb, American Express, Facebook, WhatsApp, eBay, Instagram…
+• Các công nghệ được đào tạo bao gồm:
+• Programming Languages: HTML5/CSS3, JavaScript, ES6, TypeScript
+• Library: ReactJS
+• CSS Libraries: Bootstrap 4
+• Source Controls: Git
+• Tools: Visual Studio Code
+• Testing Framework: Jest
+• WebServices: RESTful WebServices
+• WebServices Testing: Postman
+• Code Quality Analysis: Eslint, Tslint, Prettier
+• Được đào tạo về quy trình phát triển dự án phần mềm, luyện tập kỹ năng coding trong dự án với các chuyên gia công nghệ & lập trình viên nhiều năm kinh nghiệm.
+I salute you all!
+My name is Vu Duc Manh, a year-end student at the Institute of Post and Telecommunications Technology, after learning about the company's recruitment information, I feel that I fit the recruitment criteria of the company. Regarding my own ability, I am an active, inquisitive, seeking person who can endure well under pressure. Do not continue of the environment to work Professional, I still lack skills in teamwork and work experience. So I really want to apply to work at the company to hone my knowledge and learn a lot of valuable experiences from the brothers and sisters in the company. I look forward to helping you and giving me more opportunities.
+I sincerely thank you guys!
+Vu Duc Manh
+
+promise sinh ra dùng cho các thao tác bất đồng bộ, trước khi promise sinh ra chúng ta hay dùng callback đê xử lý, khi sử dụng callback thì hay xảy ra callback hell
+,callback hell làm cho lập trình viên khó đọc code vì sẽ lồng vào nhau, promise sinh ra giải quyết vần đề đó, giúp code dex đọc dễ hiểu, để tạo 1 promise chúng ta tạo 1 từ khóa new với Promise, trong contrusctor của đối tượng được tạo
+
+Bình Trần Hữu21:49
+PureComponent
+PureFunction
+React.memo()\
+Bình Trần Hữu21:52
+HOC
+CSR vs SSR
+Bình Trần Hữu21:54
+Callback
+1.	Side effects
+Bình Trần Hữu21:56
+Rules  of Hooks
+Bình Trần Hữu21:57
+Truthy, Falsy
+Data type
+
+
+Hoisting => Hoisting là hành vi mặc định của JavaScript về việc di chuyển các khai báo lên đầu để compiled hay thực thi code của bạn
+Closure =>Closure là một chức năng có quyền truy cập vào phạm vi cha, ngay cả sau khi scope đã đón
+bind(), call(), apply()
+IIFE
+React, Vue vs Jquery
+
+Sync vs Async
+Scope
+let, var, const
+Declare, Express, Arrow function
+
+Immutable vs Mutable
+
+Deep copy VS Shallow copy
+JSX là gì?
+React.createElement()
+
+Babel
+Webpack
+
+Bind() và this
+Feature ES
+ES6
+Method work with array
+
+HTML5 vs HTML
+CSS3 và CSS
+
+Redux, Redux middleware
+https://longnv.name.vn/javascript-nang-cao/dong-bo-va-bat-dong-bo-trong-javascript
+https://www.programmerall.com/article/41721982669/
+
+
+======================
+
+
+50%-300
+30%-250
+25%-200
+Trả lời: Reducer là các hàm thuần túy chỉ ra rõ ràng trạng thái ứng dụng thay đổi n
+hư thế nào khi khi một hành động cụ thể xảy ra. Bằng cách này, nó xét đến trạng thái 
+trước đó và các hành động để chuyển sang một trạng thái mới.
+
+
+=============================
+SASS-SCSS
+	cai dat SASS : npm init -> npm i node-sass --save
+   "scsstocss": "node-sass sass/main.scss css/style.css -w"
+npm run scsstocss
+
+clip path
+   1. mixin:
+	@mixin Manh($a,$b){
+ 	 color : $a;
+  	text-decoration : $b;
+	}
+	=> @include Manh(red,none);
+
+    2. extend 
+	%Manh{
+	color : red;
+	text-decoration : none;
+	}
+	
+	=> @extend %Manh ;
+	
+     3. funtion
+	
+	@function Manh($a,$b){
+	return $a*$b;
+	}
+	
+	=> Manh(1,3);
+      4. &:not(:last-child){  cho tất cả các phần tử margin :10px ngoại trừ thg cuối
+	 margin : 10px
+	}
+   
+      5. outline-offset : 1.5rem => outline ben ngoai 1 phan tu cach ptu do 1.5rem
+
+ clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 93%, 70% 100%, 30% 100%, 0 92%, 0 0);
+    background: radial-gradient( rgba(142,158,252,.8),rgba(28,62,255,0.8)); 
+
+==================================
+typescript :
+npm init
+npm i typescript
+npx tsc --init
+npm i ts-node-dev
+
+"dev":"tsnd --respawn ./src/index.ts"
+"build" : "tsc ./src/index.ts --outDir ./build"
+
