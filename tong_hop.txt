@@ -1,4 +1,4 @@
-i,em : nghiêng chữ
+,em : nghiêng chữ
 u,ins : gạch chân chữ
 THUỘC TÍNH CSS : 
 - color
@@ -75,7 +75,30 @@ npm i react-quill : soạn thảo văn bản
 {
 const products = await Product.find({$text :{$search : query}}) tim kiem bat buoc phai co (text : true) trong model
 }
-=========================================================
+  {`${item.description && item.description.substring(0, 100)}....`}
+
+ VIET DIEU KIEN TRONG CLASS :  <div className="slide"id={`${values.name ? values.name : "noData"}`}>
+
+==================================================
+upload file image trong reactjs
+
+export const openFile = (event)=>{ 
+  var input = event.target;
+  var readers = new FileReader();
+  readers.onload = function(){
+    var dataURL = readers.result;
+    var output = document.getElementById('output')  ;
+    output.src= dataURL;
+  };
+  if(input.files && input.files[0]){
+    readers.readAsDataURL(event.target.files['0']);
+  }
+  else{
+    console.log('fail');
+  }
+}
+
+========================================================================================================================================
                              MongoDB-nodejs
 npm init -y
 npm i express body-parser mongoose cors morgan express-jwt firebase-admin jsonwebtoken nodemon dotenv
@@ -97,13 +120,13 @@ npm i @stripe/stripe-js @stripe/react-stripe-js : ben client
 npm i @react-pdf/renderer
 npm install "@david`.kucsai/react-pdf-table"
 npm i uniqueid :sever
-============================================================================================
+========================================================================================================================================
 	Netflix 
 npm i express mongoose jsonwebtoken nodemon dotenv
 npm i crypto-js
   const {password,...info} = user._doc // tra ve user ma ko co paswword
   res.json(info)
-========================================================================================
+========================================================================================================================================
 npm i body-parser cors morgan express-jwt  
 được ủy quyền thích hợp
 xác định phạm vi đánh giá
@@ -158,7 +181,7 @@ import { Suspense } from "react";
 
 
 
-======================================================================
+========================================================================================================================================
 			Chon truong dai hoc cho a Trung  
 Vũ Đức Mạnh-B17DCAT123
 Số thứ tự : 33
@@ -194,8 +217,7 @@ khắc kị bất thường ,vợ chồng ăn ở ko bền lâu, trước hợp 
 23.Đại học kinh doanh và công nghệ hà nội : Công nghệ thông tin  -2020 16đ==>(done)
 24.Đại học bách khoa : Tiếng Anh KHKT và Công nghệ 24.1 : giảng dạy bằng tiếng anh ==>(done)
 25.Đại học Kinh tế Kỹ thuật - Công nghiệp (Cơ sở Hà Nội) - 2020 lấy 19đ==>(done)
-======================================
-====================================
+=========================================================================================================================================
 repair : fix, out of service, 
 advertisement: tv,radio,commercial, promotion,
 impressing = congratulation (an tuong) :impressing , excite,enjoy, great,satisfy,amazing,intersting,not..disappointed
@@ -217,7 +239,7 @@ review : look at, look over, carefully, check, exam
                             }
 
 
-============================
+========================================================================================================================================
 
 import './App.css';
 import Login from './page/auth/Login';
@@ -1324,4 +1346,135 @@ npm i ts-node-dev
 
 "dev":"tsnd --respawn ./src/index.ts"
 "build" : "tsc ./src/index.ts --outDir ./build"
+
+  => tao react+typescript
+	npm install redux-saga
+npx install redux-saga
+		npx create-react-app tenProject --template typescript
+		npx create-react-app react-cart-typescript --template typescript
+		npx create-react-app learn_state --template redux-typescript
+
+ npm install @reduxjs/toolkit react-redux
+npm i history
+	
+	1. typescript cho useState 
+		type user = {
+		 name :string, 	
+		age :number
+		}
+		const [student,setStudent] = useState<user[]>([])
+	cac kieu du lieu co ban nhu number, string, boolean thi ko can khai bao. Chi kieu du lieu la 1 object thi moi khai bao
+	3. gui 1 children sang
+	type CheckProps ={
+    	children : React.ReactNode
+		}
+	4. gui 1 mang
+	type Checkk ={
+   	 children : string,
+   	 name :{
+      	  first :string,
+       	 last :string
+   	 }[]
+	}
+
+	5. gui 1 doi tuong
+	type Checkk ={
+  	  children : string,
+   		 name :{
+     	   first :string,
+      	  last :string
+    		}
+		}
+
+	6. gui 1 style css
+
+    	styles : React.CSSProperties -> compoment con
+	 styles={{color:'red'}} -> cha
+
+	7. co the truyen 1 gia tri vao trong 1 class cua element 
+		className = {`class-with-${size}`}
+
+
+		
+	8. kieu du lieu cho function 
+	type Checkk = (name :string,pass:string) =>string
+
+	 const Login : Checkk =(name:string,pass:string):string=>{
+
+     	 return 'a'
+   	 }=> khai bao ham tra ve cai gi, co may tham so
+
+	9. kiem tra kieu cua 1 so
+	const random = Math.random()>0.5 ? 'hello' :[2,3]
+	if(typeof random == 'string'){
+	const number = random.toUpperCase();
+	console.log(number)
+	else{console.log('none')}
+
+
+Maimai99linhlinhllkka : metoru
+Maimai99linklinkllakas : 
+Maimai88linklinkllakas
+bà chùm tư vấn, kẻ nắm giữ mọi bí quyết, tiểu xảo trong cv
+
+	========react-cart-typescript=======
+	npm i @material-ui/core @material-ui/icons
+	npm i react-query
+	npm i styled-components @types/styled-components
+
+	=========nextjs===========
+	cai dat : npm i -g create-next-app
+			create-next-app .
+	npm i -D typescript @types/react @types/node
+	npm install -D tailwindcss@latest postcss@latest autoprefixer@latest => sau do cai them : npx tailwindcss init -p
+
+	1.import {useRouter} from 'next/router' 
+	  const router = useRouter()
+	=> dung giong nhu la useHistory
+		router.push('/home') 
+		onClick={()=>{router.push({
+			pathname : '/product/[id]',
+			query : {id : product.id}
+		})}}
+	2.  <Link
+         	 href={{
+           	 pathname: '/about',
+           	 query: { name: 'test' },
+          	}}
+
+		scroll = {false} => tranh load keo len dau trang
+       	     >
+	 cach su dung Link
+	
+	3. const {query : {id}} = useRouter()
+	tuong duong voi :
+	const {query : {id}} = useRouter()
+	=>const {id} = query
+
+
+
+	npm i bootstrap-next
+	import 'bootstrap/dist/css/bootstrap.min.css';
+	type ham={
+	(email :string,pass : string) : string
+	}
+	 sd : const bien : ham =(email :string,pass : string)=>{
+		} => khai bao ham tra ve cai gi, co may tham so
+		
+
+	2 cái quần, 2 cái áo, 1 đôi giầy, 
+======
+git branch task1: tao branch
+git status : xem trang thai file
+git branch : xem danh sách branch
+git checkout -b developer : tao branch developer roi di den branh day
+git checkout developer : di den branh day
+git log --oneline : xem ds cac commit
+git remote -v : xem danh sách cac remote đã thêm
+git branch -d tenNhanh : xoa nhánh : muốn xóa dc 1 nhánh thì phải đứng ở nhánh khác nhánh đyấ
+git pull origin nameBranch : pull code ve
+b1 : git config --global user.name manhvddd  : doi ten tai khoan
+b2: git config --global --replace-all user.email "new@mail.com" : doi ten email
+  git config --global --list : xem ds user
+
 
