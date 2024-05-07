@@ -1324,4 +1324,4 @@ npm i ts-node-dev
 
 "dev":"tsnd --respawn ./src/index.ts"
 "build" : "tsc ./src/index.ts --outDir ./build"
-
+truyenfull247.com
